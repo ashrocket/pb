@@ -1,0 +1,6 @@
+- Storage path: `~/Library/Application Support/<app>/history.sqlite`.
+- Format: single-file SQLite database containing metadata and payloads.
+- File permissions: support directory `0700`; database `0600`.
+- Size caps: fixed 200-row retention; no separate byte cap documented.
+- Retention policy: newest 200 entries are retained.
+- Notes: image payloads are stored in the main database rather than as sidecar files.

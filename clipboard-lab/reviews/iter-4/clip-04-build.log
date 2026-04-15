@@ -1,0 +1,118 @@
+zsh:1: permission denied: ./scripts/build.sh
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-04': failed loading cached manifest for 'clip-04': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x845570240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed storing manifest for 'clip-04' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x8455703f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x8455704e0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/5] Compiling Clip04App ClipConfiguration.swift
+[3/5] Write Objects.LinkFileList
+[4/5] Linking clip-04
+Build complete! (26.30s)
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/build/clip-04.app
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-04': failed loading cached manifest for 'clip-04': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa61558240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa61558270 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+error: 'clip-04': Invalid manifest (compiled with: ["/Library/Developer/CommandLineTools/usr/bin/swiftc", "-vfsoverlay", "/var/folders/_m/dm4kdcmd4sxbs8v2s9g1bh6h0000gq/T/TemporaryDirectory.G6IIOd/vfs.yaml", "-L", "/Library/Developer/CommandLineTools/usr/lib/swift/pm/ManifestAPI", "-lPackageDescription", "-Xlinker", "-rpath", "-Xlinker", "/Library/Developer/CommandLineTools/usr/lib/swift/pm/ManifestAPI", "-target", "arm64-apple-macosx14.0", "-I", "/Library/Developer/CommandLineTools/Library/Developer/Frameworks", "-L", "/Library/Developer/CommandLineTools/Library/Developer/Frameworks", "-plugin-path", "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing", "-sdk", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-swift-version", "6", "-I", "/Library/Developer/CommandLineTools/usr/lib/swift/pm/ManifestAPI", "-sdk", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-package-description-version", "6.2.0", "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/Package.swift", "-o", "/var/folders/_m/dm4kdcmd4sxbs8v2s9g1bh6h0000gq/T/TemporaryDirectory.au84Yp/clip-04-manifest"])
+<unknown>:0: error: unable to open output file '/Users/ashleyraiteri/.cache/clang/ModuleCache/30RXNLAKNHS6G/SwiftShims-6PVXR3VD9JVP.pcm': 'Operation not permitted'
+<unknown>:0: error: could not build Objective-C module 'SwiftShims'
+warning: 'clip-04': failed loading cached manifest for 'clip-04': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa615584b0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa61558300 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+error: 'clip-04': Invalid manifest (compiled with: ["/Library/Developer/CommandLineTools/usr/bin/swiftc", "-vfsoverlay", "/var/folders/_m/dm4kdcmd4sxbs8v2s9g1bh6h0000gq/T/TemporaryDirectory.YLInkS/vfs.yaml", "-L", "/Library/Developer/CommandLineTools/usr/lib/swift/pm/ManifestAPI", "-lPackageDescription", "-Xlinker", "-rpath", "-Xlinker", "/Library/Developer/CommandLineTools/usr/lib/swift/pm/ManifestAPI", "-target", "arm64-apple-macosx14.0", "-I", "/Library/Developer/CommandLineTools/Library/Developer/Frameworks", "-L", "/Library/Developer/CommandLineTools/Library/Developer/Frameworks", "-plugin-path", "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing", "-sdk", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-swift-version", "6", "-I", "/Library/Developer/CommandLineTools/usr/lib/swift/pm/ManifestAPI", "-sdk", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-package-description-version", "6.2.0", "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/Package.swift", "-o", "/var/folders/_m/dm4kdcmd4sxbs8v2s9g1bh6h0000gq/T/TemporaryDirectory.aSHg2w/clip-04-manifest"])
+<unknown>:0: error: unable to open output file '/Users/ashleyraiteri/.cache/clang/ModuleCache/30RXNLAKNHS6G/SwiftShims-6PVXR3VD9JVP.pcm': 'Operation not permitted'
+<unknown>:0: error: could not build Objective-C module 'SwiftShims'
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-04': failed loading cached manifest for 'clip-04': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa1d558240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed storing manifest for 'clip-04' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa1d5583f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa1d5584e0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for debugging...
+[0/11] Write sources
+[1/11] /Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/debug/clip-04PackageTests.derived/runner.swift
+[2/11] Write sources
+[3/11] Write clip-04-entitlement.plist
+[4/11] Write sources
+[5/11] Write swift-version--1AB21518FC5DEDBE.txt
+[7/23] Compiling Clip04App main.swift
+[8/23] Compiling Clip04App URLDetector.swift
+[9/23] Compiling Clip04App MenuBar.swift
+[10/23] Compiling Clip04App QueryParser.swift
+[11/23] Compiling Clip04App SettingsWindow.swift
+[12/23] Compiling Clip04App Store.swift
+[13/23] Compiling Clip04App HotkeyManager.swift
+[14/23] Emitting module Clip04App
+[15/23] Compiling Clip04App ClipboardPoller.swift
+[16/23] Compiling Clip04App Encryption.swift
+[17/23] Compiling Clip04App HistoryWindow.swift
+[18/23] Compiling Clip04App ClipConfiguration.swift
+[18/23] Write Objects.LinkFileList
+[19/23] Linking clip-04
+[20/23] Applying clip-04
+[22/25] Emitting module Clip04HarnessTests
+[23/25] Compiling Clip04HarnessTests QueryParserTests.swift
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/Tests/QueryParserTests/QueryParserTests.swift:19:29: error: cannot find 'Data' in scope
+ 17 |         do {
+ 18 |             let manager = EncryptionManager(keychain: InMemoryKeychainStore())
+ 19 |             let plaintext = Data("prior auth packet".utf8)
+    |                             `- error: cannot find 'Data' in scope
+ 20 |             let ciphertext = try manager.encrypt(plaintext)
+ 21 | 
+error: fatalError
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-04': failed loading cached manifest for 'clip-04': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xbb3558240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed storing manifest for 'clip-04' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xbb35583f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xbb35584e0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--1AB21518FC5DEDBE.txt
+[3/6] Compiling Clip04HarnessTests QueryParserTests.swift
+[4/6] Emitting module Clip04HarnessTests
+[5/8] Emitting module clip_04PackageTests
+[6/8] Compiling clip_04PackageTests runner.swift
+[6/8] Write Objects.LinkFileList
+[7/8] Linking clip-04PackageTests
+Build complete! (1.04s)
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-04': failed loading cached manifest for 'clip-04': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa3b56c240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed storing manifest for 'clip-04' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa3b56c3f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa3b56c4e0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+[0/1] Planning build
+Building for production...
+[0/3] Write sources
+[1/3] Write swift-version--1AB21518FC5DEDBE.txt
+[3/4] Compiling Clip04App ClipConfiguration.swift
+[3/5] Write Objects.LinkFileList
+[4/5] Linking clip-04
+Build complete! (2.59s)
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/build/clip-04.app
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-04': failed loading cached manifest for 'clip-04': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x82b560240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed storing manifest for 'clip-04' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x82b5603f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-04': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x82b5604e0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--1AB21518FC5DEDBE.txt
+[3/7] Compiling Clip04App ClipboardPoller.swift
+[4/7] Emitting module Clip04App
+[5/8] Compiling Clip04App main.swift
+[5/9] Write Objects.LinkFileList
+[6/9] Linking clip-04
+[7/9] Applying clip-04
+[9/10] Emitting module Clip04HarnessTests
+[9/11] Write Objects.LinkFileList
+[10/11] Linking clip-04PackageTests
+Build complete! (1.21s)

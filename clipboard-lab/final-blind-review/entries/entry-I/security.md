@@ -1,0 +1,7 @@
+- Concealed/transient handling: no explicit handling for concealed or transient pasteboard types was documented.
+- Storage encryption: unknown.
+- Key management: not documented.
+- Password-manager exclusions: yes; password-manager-specific pasteboard types and a user-managed excluded-app list are documented.
+- Network behavior: app-level update networking is documented through an appcast feed.
+- Process isolation: not documented.
+- Threat model completeness: no formal threat model was published.

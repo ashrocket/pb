@@ -1,0 +1,6 @@
+- Polling interval: configurable; default 0.75 seconds and clamped to a minimum of 0.10 seconds.
+- Search speed claim: no benchmark was documented, but the plaintext search index exists specifically to preserve fast substring search.
+- Memory footprint: unknown; no numeric claim documented.
+- Startup cost: not documented.
+- Known hot paths: encryption/decryption work, plaintext search-index maintenance, and image preview generation.
+- Notes: test coverage explicitly includes encryption round-trip and URL-detection edge cases, but not performance benchmarks.

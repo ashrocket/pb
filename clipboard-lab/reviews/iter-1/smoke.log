@@ -1,0 +1,12 @@
+== Maccy ==
+present: no
+launch: skipped (app unavailable)
+quit: skipped
+permissions: user must grant Accessibility + Input Monitoring manually for deeper runtime testing
+
+== Raycast ==
+present: no
+launch: skipped (app unavailable)
+quit: skipped
+permissions: user must grant Accessibility + Input Monitoring manually for deeper runtime testing
+

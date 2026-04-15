@@ -1,0 +1,10 @@
+- History depth: fixed 200 entries.
+- Search: yes; literal substring matching plus an `image:` filter.
+- Image support: yes; images are re-encoded as PNG and indexed with width/height/byte metadata.
+- Pinning: no documented pinning feature.
+- Snippets: no.
+- Sync: no.
+- Hotkey: yes; default `Command + Shift + V`, plus `Command + 1` through `Command + 9` quick-pick shortcuts.
+- Settings UI: no dedicated settings window; behavior is controlled through a local `config.toml`.
+- OCR: no.
+- Query syntax: limited; plain terms plus `image:`.

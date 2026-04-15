@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seashells Tour — where agent-pb becomes shellskills</title>
+  <meta name="description" content="A guided tour of the current agent-pb microsite and a brand direction for Seashells, shellskills, pb, and look.">
+  <meta property="og:title" content="Seashells Tour — where agent-pb becomes shellskills">
+  <meta property="og:description" content="A guided tour of the current microsite and the brand system it wants to grow into.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://agent-pb.raiteri.net/seashells-tour.html">
+  <link rel="canonical" href="https://agent-pb.raiteri.net/seashells-tour.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sand: #f5ead7;
+      --cream: #fff9ef;
+      --shell: #ffe3c0;
+      --foam: #d8f2ef;
+      --sea: #1f6370;
+      --deep: #0d3742;
+      --coral: #e46a4c;
+      --gold: #d7a94b;
+      --ink: #17313a;
+      --muted: #5c6d73;
+      --card: rgba(255, 249, 239, 0.9);
+      --line: rgba(23, 49, 58, 0.14);
+      --shadow: 0 18px 45px rgba(13, 55, 66, 0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Manrope", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 227, 192, 0.95), transparent 28%),
+        radial-gradient(circle at top right, rgba(216, 242, 239, 0.88), transparent 24%),
+        linear-gradient(180deg, #fffaf2 0%, #f8efe2 48%, #f1e6d5 100%);
+      min-height: 100vh;
+    }
+
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 249, 239, 0.8);
+      border-bottom: 1px solid rgba(23, 49, 58, 0.08);
+    }
+
+    .topbar {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .shell-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px 14px 20px 20px;
+      background:
+        radial-gradient(circle at 50% 16%, rgba(255,255,255,0.9), transparent 30%),
+        linear-gradient(180deg, #f3c58d 0%, #ea8f65 100%);
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.32);
+      position: relative;
+    }
+
+    .shell-mark::before,
+    .shell-mark::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.52);
+      border-radius: 999px;
+    }
+
+    .shell-mark::before {
+      width: 20px;
+      height: 4px;
+      top: 14px;
+      box-shadow:
+        0 8px 0 0 rgba(255,255,255,0.44),
+        0 16px 0 0 rgba(255,255,255,0.34);
+    }
+
+    .shell-mark::after {
+      width: 4px;
+      height: 22px;
+      top: 12px;
+    }
+
+    .brand-lockup .eyebrow {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--sea);
+      font-weight: 800;
+      margin-bottom: 2px;
+    }
+
+    .brand-lockup h1 {
+      font-family: "Fraunces", serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--deep);
+    }
+
+    .brand-lockup p {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    nav a:hover { color: var(--deep); }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 28px 96px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 34px;
+      align-items: stretch;
+      margin-top: 28px;
+    }
+
+    .hero-copy,
+    .hero-art {
+      border: 1px solid rgba(23, 49, 58, 0.08);
+      box-shadow: var(--shadow);
+      border-radius: 34px;
+      overflow: hidden;
+    }
+
+    .hero-copy {
+      background:
+        radial-gradient(circle at top left, rgba(255, 227, 192, 0.9), transparent 42%),
+        linear-gradient(180deg, rgba(255, 249, 239, 0.96), rgba(250, 240, 224, 0.98));
+      padding: 42px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(31, 99, 112, 0.08);
+      color: var(--sea);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-family: "Fraunces", serif;
+      font-size: clamp(2.4rem, 4vw, 4.5rem);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+      color: var(--deep);
+      max-width: 10ch;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--ink);
+      max-width: 62ch;
+    }
+
+    .hero p + p { margin-top: 18px; }
+
+    .hero-art {
+      background:
+        linear-gradient(180deg, rgba(13, 55, 66, 0.96), rgba(22, 89, 101, 0.98));
+      color: white;
+      padding: 34px;
+      position: relative;
+    }
+
+    .hero-art::before {
+      content: "";
+      position: absolute;
+      inset: auto -40px -60px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(255, 227, 192, 0.3), transparent 64%);
+    }
+
+    .mini-map {
+      display: grid;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mini-map h3 {
+      font-family: "Fraunces", serif;
+      font-size: 1.55rem;
+      margin-bottom: 6px;
+    }
+
+    .mini-map p {
+      color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+      font-size: 0.96rem;
+      margin-bottom: 10px;
+    }
+
+    .mini-card {
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .mini-card strong {
+      display: block;
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--shell);
+      margin-bottom: 5px;
+    }
+
+    .mini-card span {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      line-height: 1.55;
+      display: block;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.97fr) minmax(0, 1.03fr);
+      gap: 26px;
+      margin-top: 30px;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+    }
+
+    .panel h3 {
+      font-family: "Fraunces", serif;
+      font-size: 1.72rem;
+      color: var(--deep);
+      margin-bottom: 14px;
+    }
+
+    .panel p {
+      color: var(--ink);
+      line-height: 1.72;
+      font-size: 1rem;
+    }
+
+    .panel p + p,
+    .panel ul + p,
+    .panel .tour-stop + .tour-stop,
+    .panel .brand-stack + .brand-stack {
+      margin-top: 16px;
+    }
+
+    .section-label {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+      color: var(--coral);
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .tour-stop {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.52);
+      border: 1px solid rgba(23,49,58,0.08);
+    }
+
+    .tour-stop .num {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #ffd3ac, #f3a772);
+      color: var(--deep);
+      font-weight: 800;
+      font-size: 1rem;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.55);
+    }
+
+    .tour-stop h4,
+    .brand-stack h4,
+    .launch-step h4 {
+      font-size: 1.02rem;
+      color: var(--deep);
+      margin-bottom: 6px;
+    }
+
+    .tour-stop p,
+    .brand-stack p,
+    .launch-step p {
+      font-size: 0.95rem;
+      line-height: 1.68;
+      color: var(--muted);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .chip {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(31, 99, 112, 0.09);
+      color: var(--sea);
+      font-weight: 700;
+      font-size: 0.84rem;
+      border: 1px solid rgba(31,99,112,0.1);
+    }
+
+    .brand-stack {
+      padding: 18px 20px;
+      border-radius: 22px;
+      background: rgba(216, 242, 239, 0.48);
+      border: 1px solid rgba(31, 99, 112, 0.13);
+    }
+
+    .brand-stack code,
+    .tour-stop code,
+    .launch-step code {
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 0.88rem;
+      background: rgba(13, 55, 66, 0.07);
+      color: var(--deep);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    .shoreline {
+      margin-top: 28px;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(23, 49, 58, 0.09);
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(216,242,239,0.9), rgba(245,234,215,0.96));
+    }
+
+    .shoreline .inner {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      background: rgba(23,49,58,0.09);
+    }
+
+    .shoreline .cell {
+      background: rgba(255, 250, 242, 0.95);
+      padding: 20px;
+      min-height: 150px;
+    }
+
+    .shoreline .cell .tag {
+      font-size: 0.73rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--coral);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .shoreline .cell strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--deep);
+      margin-bottom: 8px;
+    }
+
+    .shoreline .cell span {
+      display: block;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.92rem;
+    }
+
+    .launch {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .launch-step {
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.54);
+      border: 1px solid rgba(23,49,58,0.08);
+    }
+
+    .quote {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--gold);
+      background: rgba(255, 227, 192, 0.42);
+      border-radius: 0 18px 18px 0;
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    .quote strong { color: var(--deep); }
+
+    footer {
+      max-width: 1180px;
+      margin: 28px auto 0;
+      padding: 0 28px 56px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--sea);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .grid,
+      .shoreline .inner,
+      .launch {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        max-width: 14ch;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .topbar,
+      .page,
+      footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .hero-copy,
+      .hero-art,
+      .panel {
+        padding: 24px;
+        border-radius: 24px;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .tour-stop {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand-lockup">
+        <div class="shell-mark" aria-hidden="true"></div>
+        <div>
+          <div class="eyebrow">Seashells</div>
+          <h1>Guided Tour of the agent-pb Microsite</h1>
+          <p>and the brand system it wants to grow into</p>
+        </div>
+      </div>
+      <nav>
+        <a href="https://agent-pb.raiteri.net/">Current Site</a>
+        <a href="https://agent-pb.raiteri.net/blog.html">Blog</a>
+        <a href="https://github.com/ashrocket/agent-pb">Repo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="kicker">Microsite Tour + Brand Direction</div>
+        <h2>The site already knows what it is.</h2>
+        <p>The current <strong>agent-pb</strong> microsite is warm, specific, and practical. It sells one tiny motion really well: stop selecting things your agent already knows how to hand you.</p>
+        <p>The next move is not to throw that away. The next move is to explain that <strong>pb</strong>, <strong>look</strong>, history cleanup, and shell hygiene are all part of the same shoreline: shell-adjacent artifact handling. Publicly that becomes <strong>Seashells</strong>. Operationally the skill stays <code>shellskills</code>. Verb-wise, <code>pb</code> stays perfect for copy because it means <strong>past buffer</strong>.</p>
+      </div>
+
+      <aside class="hero-art">
+        <div class="mini-map">
+          <h3>What this document does</h3>
+          <p>It walks the current homepage section by section, then sketches the clearer brand architecture sitting just beneath it.</p>
+          <div class="mini-card">
+            <strong>Current feeling</strong>
+            <span>Butter knife. Toast stripe. Golden utility. One tiny helper with a point of view.</span>
+          </div>
+          <div class="mini-card">
+            <strong>Brand gap</strong>
+            <span><code>agent-pb</code> and <code>agent-look</code> behave like siblings, but the family name is still implicit.</span>
+          </div>
+          <div class="mini-card">
+            <strong>Proposed answer</strong>
+            <span><strong>Seashells</strong> as the public family, <code>shellskills</code> as the stable skill root, <code>pb</code> and <code>look</code> as capabilities.</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <div class="section-label">Tour of the Current Microsite</div>
+        <h3>What each existing section is already communicating</h3>
+
+        <div class="tour-stop">
+          <div class="num">01</div>
+          <div>
+            <h4>The hero is blunt, which is good.</h4>
+            <p><strong>"Stop selecting and copying text from your AI agent"</strong> is not a clever slogan pretending to be a product. It is a direct description of a repetitive pain. The butter-and-toast treatment gives it memorability without softening the utility.</p>
+          </div>
+        </div>
+
+        <div class="tour-stop">
+          <div class="num">02</div>
+          <div>
+            <h4>The three-step strip sells a motion, not a platform.</h4>
+            <p>The page explains a simple handoff: work with the agent, invoke the helper, paste. That is the right scale for the current product. It makes <code>pb</code> feel obvious instead of magical.</p>
+          </div>
+        </div>
+
+        <div class="tour-stop">
+          <div class="num">03</div>
+          <div>
+            <h4>The cross-agent section is secretly the bridge to Seashells.</h4>
+            <p>The line <em>"One clipboard workflow. Multiple agent hosts."</em> is already bigger than <code>agent-pb</code>. It says the real asset is a transferable shell behavior, not a single host-specific plugin.</p>
+          </div>
+        </div>
+
+        <div class="tour-stop">
+          <div class="num">04</div>
+          <div>
+            <h4>The defaults section makes trust visible.</h4>
+            <p>Automatic artifact ranking, cross-platform clipboard behavior, fence stripping, and not copying secrets unless explicitly asked: these are not "features" in the startup sense. They are trust contracts. Keep them near the center of the story.</p>
+          </div>
+        </div>
+
+        <div class="tour-stop">
+          <div class="num">05</div>
+          <div>
+            <h4>The install block proves the product has hands.</h4>
+            <p>Claude Code plugin, Codex skill, and portable rules text all show the idea can travel. This is where the site stops being a joke and starts being infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="tour-stop">
+          <div class="num">06</div>
+          <div>
+            <h4>The "also by Ashley" card is the family photo trying to happen.</h4>
+            <p><code>agent-look</code> is already framed as the same philosophy: stop dragging things around manually. That means the product family exists. It just needs a name strong enough to hold it.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="section-label">Brand Direction</div>
+        <h3>What the site wants to become</h3>
+        <p>The present brand is flavorful but narrow. <strong>agent-pb</strong> names one capability. The broader concept is stronger: tools that manage the membrane between your shell, your artifacts, and your agent.</p>
+        <p>That family should be named once at the top. Everything else becomes a capability under it.</p>
+
+        <div class="brand-stack">
+          <h4>Public family name: <strong>Seashells</strong></h4>
+          <p>The public brand should sound tactile, memorable, and slightly playful. Seashells keeps the hand-feel of the butter metaphor, but broadens it from one tool to a shoreline of shell helpers.</p>
+        </div>
+
+        <div class="brand-stack">
+          <h4>Stable skill root: <code>shellskills</code></h4>
+          <p>This is the internal and practical name. It is literal, composable, and future-safe. It can absorb new behaviors without renaming the top-level skill every time another useful shell affordance appears.</p>
+        </div>
+
+        <div class="brand-stack">
+          <h4>Capability name: <code>pb</code></h4>
+          <p>Keep it. The interpretation as <strong>past buffer</strong> is clean, shell-native, and short. It sounds like a command because it should.</p>
+        </div>
+
+        <div class="brand-stack">
+          <h4>Capability name: <code>look</code></h4>
+          <p>If screenshots are a clipboard function, then <code>look</code> belongs in the same family. It becomes the intake side of the same artifact loop that <code>pb</code> handles on output.</p>
+        </div>
+
+        <div class="brand-stack">
+          <h4>Capability names: <code>history</code>, <code>session</code>, <code>env</code></h4>
+          <p>These belong naturally once the promise expands from clipboard convenience to shell workflow management. They are not side quests. They are the safety rails around the same work surface.</p>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Seashells = family brand</span>
+          <span class="chip">shellskills = master skill</span>
+          <span class="chip">pb = copy verb</span>
+          <span class="chip">look = screenshot intake</span>
+          <span class="chip">history = guardrails</span>
+        </div>
+
+        <div class="quote">
+          <strong>Core pitch:</strong> Seashells is a family of shell-adjacent agent tools that move artifacts cleanly between conversation, clipboard, screenshots, history, and your zsh environment.
+        </div>
+      </article>
+    </section>
+
+    <section class="panel shoreline">
+      <div style="padding: 30px 30px 12px;">
+        <div class="section-label">Microsite Architecture</div>
+        <h3>How the site could evolve without losing its current charm</h3>
+        <p>The homepage does not need to become a generic product suite grid overnight. It can keep the current tactile tone, but reorganize around one family heading and a small number of shell verbs.</p>
+      </div>
+      <div class="inner">
+        <div class="cell">
+          <div class="tag">Front Door</div>
+          <strong>Seashells homepage</strong>
+          <span>A family landing page with a clear thesis: your agent should manage shell-adjacent artifacts, not make you drag them around.</span>
+        </div>
+        <div class="cell">
+          <div class="tag">Primary Verb</div>
+          <strong><code>pb</code> / past buffer</strong>
+          <span>The current star. Keep the butter-knife tone as one card or lane inside the larger family.</span>
+        </div>
+        <div class="cell">
+          <div class="tag">Input Verb</div>
+          <strong><code>look</code></strong>
+          <span>Position screenshots as the intake complement to clipboard output. Same promise, opposite direction.</span>
+        </div>
+        <div class="cell">
+          <div class="tag">Shell Care</div>
+          <strong>History, session, env</strong>
+          <span>Show that the family also protects the shell itself: history safety, session cleanup, and env hygiene.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <div class="section-label">Visual Language</div>
+        <h3>What I would preserve and what I would shift</h3>
+        <p><strong>Keep:</strong> the tactile metaphors, the specific verbs, the no-nonsense install snippets, and the sense that these are real tools for real shell work.</p>
+        <p><strong>Shift:</strong> from all-butter-all-the-time to a shoreline palette. The current gold should not disappear; it becomes one accent among shell pink, sea green, and deep teal. That lets <code>pb</code> remain warm while making room for <code>look</code> and shell safety features to feel like part of the same family.</p>
+        <p>Typography should also carry more of the identity. A serif display face for the family voice and a modern grotesk for the command surfaces gives the site a more editorial, less "single landing page template" feel.</p>
+      </article>
+
+      <article class="panel">
+        <div class="section-label">Naming Rules</div>
+        <h3>The naming system should stay boring under the hood</h3>
+        <p>Public names can be lyrical. Operational names should stay plain.</p>
+        <div class="launch-step">
+          <h4>Publicly</h4>
+          <p><strong>Seashells</strong> is the family. Marketing pages, social posts, overview docs, and ecosystem language can use it freely.</p>
+        </div>
+        <div class="launch-step">
+          <h4>In skills and prompts</h4>
+          <p><code>shellskills</code> remains the stable top-level invocation surface. This avoids constant rename churn in installed local tooling.</p>
+        </div>
+        <div class="launch-step">
+          <h4>In capability verbs</h4>
+          <p><code>pb</code>, <code>look</code>, <code>history</code>, <code>env</code>, and <code>session</code> stay terse because the shell is where terseness pays off.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-label">Suggested Rollout</div>
+      <h3>A migration path that does not waste the current site</h3>
+      <div class="launch">
+        <div class="launch-step">
+          <h4>Phase 1</h4>
+          <p>Publish overview pages like this one. Introduce <strong>Seashells</strong> as the family name without forcing an immediate repo rename.</p>
+        </div>
+        <div class="launch-step">
+          <h4>Phase 2</h4>
+          <p>Add a family-level microsite or top banner that frames <code>agent-pb</code> and <code>agent-look</code> as capabilities, not isolated toys.</p>
+        </div>
+        <div class="launch-step">
+          <h4>Phase 3</h4>
+          <p>Move the install and docs language toward <code>shellskills</code> as the stable skill root, while preserving <code>pb</code> as the copy verb and public shorthand.</p>
+        </div>
+      </div>
+      <div class="quote">
+        The site does not need a rebrand because the old one failed. It needs one because the product family got bigger than the first noun that named it.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Prepared as a guided tour for the <strong>agent-pb</strong> microsite and the <strong>Seashells / shellskills</strong> brand direction.</div>
+    <div><a href="https://agent-pb.raiteri.net/">Back to the current site</a></div>
+  </footer>
+</body>
+</html>

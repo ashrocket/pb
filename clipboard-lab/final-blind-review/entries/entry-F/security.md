@@ -1,0 +1,7 @@
+- Concealed/transient handling: documented at the product level; passwords and other transient data are ignored by default.
+- Storage encryption: documented as encrypted local storage on disk.
+- Key management: not documented in the reviewed materials.
+- Password-manager exclusions: yes; the product says it respects password managers by default.
+- Network behavior: the broader application has online and account-connected features, but clipboard content is documented as staying on the Mac.
+- Process isolation: not documented.
+- Threat model completeness: partial privacy documentation only; no full threat model was published.

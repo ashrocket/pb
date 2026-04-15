@@ -1,0 +1,6 @@
+- Polling interval: 1.0 second timer.
+- Search speed claim: not documented.
+- Memory footprint: not documented.
+- Startup cost: not documented.
+- Known hot paths: timer-driven text polling and menu rebuilding are the most obvious recurring paths.
+- Notes: the text-only bias should keep ordinary workloads lighter than image-heavy tools, but no benchmark was published.

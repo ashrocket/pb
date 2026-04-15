@@ -1,0 +1,6 @@
+- Hotkey ergonomics: strong for a dedicated utility; default `Shift + Command + V` is easy to remember.
+- Keyboard navigation: decent, with menu search and favorites, but the interaction model is older than newer command-palette designs.
+- Visual polish: intentionally spare and utilitarian.
+- First-run experience: simple; the product scope is narrow and easy to grasp.
+- Settings discoverability: good; core behavior lives in preferences.
+- Dark mode: not documented in the reviewed materials.

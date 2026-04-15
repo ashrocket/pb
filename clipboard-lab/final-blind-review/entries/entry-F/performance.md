@@ -1,0 +1,6 @@
+- Polling interval: not documented.
+- Search speed claim: documentation describes smooth performance with minimal impact on system resources.
+- Memory footprint: no numeric claim documented.
+- Startup cost: not documented.
+- Known hot paths: not documented.
+- Notes: clipboard history runs inside a much larger application, so clipboard-specific performance was not isolated in the reviewed materials.

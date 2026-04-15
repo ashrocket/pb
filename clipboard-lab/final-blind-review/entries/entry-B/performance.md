@@ -1,0 +1,6 @@
+- Polling interval: 0.75-second timer with tolerance.
+- Search speed claim: no explicit benchmark or speed claim was documented.
+- Memory footprint: unknown; no numeric claim documented.
+- Startup cost: not documented.
+- Known hot paths: image capture and storing image bytes in the primary SQLite file.
+- Notes: reviewer notes called image payload growth inside SQLite the most obvious performance risk.

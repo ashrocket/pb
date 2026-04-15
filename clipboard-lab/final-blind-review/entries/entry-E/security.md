@@ -1,0 +1,7 @@
+- Concealed/transient handling: yes, with opt-in caveat; concealed data is ignored by default unless the user chooses otherwise.
+- Storage encryption: unknown.
+- Key management: not documented.
+- Password-manager exclusions: yes; popular password apps are ignored by default and more can be added manually.
+- Network behavior: the broader application can sync preferences and run networked workflows, but clipboard history itself is documented as excluded from sync.
+- Process isolation: not documented.
+- Threat model completeness: partial privacy guidance only; no formal threat model was published.

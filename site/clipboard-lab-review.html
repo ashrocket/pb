@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clipboard-lab — 5 builds, 10 reviewed, blindfolded</title>
+<meta name="description" content="Five iterations of a macOS clipboard manager, ranked blind against Raycast, Maccy, Alfred, Clipy, and Flycut by a fresh reviewer with no knowledge of which five were ours.">
+<style>
+  :root {
+    --bg: #0f0f11;
+    --fg: #e8e6e3;
+    --muted: #8a8680;
+    --accent: #d4a843;
+    --ours: #5dade2;
+    --existing: #95a5a6;
+    --border: #26252a;
+    --card: #18171c;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 2rem; margin-bottom: 3rem; }
+  h1 { font-size: 2.1rem; margin: 0 0 0.5rem; letter-spacing: -0.02em; line-height: 1.2; }
+  .subtitle { color: var(--muted); font-size: 1.05rem; margin: 0; }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: -0.01em;
+  }
+  h3 { font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--accent); }
+  p, li { font-size: 0.95rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.35rem; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em; }
+  code { background: var(--card); padding: 1px 6px; border-radius: 4px; color: var(--accent); }
+  .tldr {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    padding: 1.2rem 1.5rem;
+    border-radius: 4px;
+    margin: 2rem 0;
+  }
+  .tldr p { margin: 0.5rem 0; }
+  .tldr strong { color: var(--accent); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--muted); font-weight: 500; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  tbody tr:hover { background: rgba(255,255,255,0.02); }
+  .rank { color: var(--muted); font-variant-numeric: tabular-nums; width: 2.5rem; }
+  .chip {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .chip.ours { background: rgba(93,173,226,0.15); color: var(--ours); }
+  .chip.existing { background: rgba(149,165,166,0.12); color: var(--existing); }
+  .verdict { color: var(--muted); font-size: 0.88rem; }
+  .progression {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.6rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .iter {
+    background: var(--card);
+    border-radius: 6px;
+    padding: 0.85rem 0.75rem;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+  .iter .name { font-weight: 600; font-size: 0.9rem; }
+  .iter .rank-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #111;
+    font-weight: 700;
+    border-radius: 999px;
+    width: 1.7rem; height: 1.7rem;
+    line-height: 1.7rem;
+    margin: 0.35rem 0 0.25rem;
+    font-size: 0.85rem;
+  }
+  .iter .loc { color: var(--muted); font-size: 0.75rem; }
+  .caveats {
+    background: #1d1614;
+    border-left: 3px solid #a8624a;
+    padding: 1rem 1.4rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+  }
+  .caveats li { margin-bottom: 0.5rem; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+    margin: 1.25rem 0 2rem;
+  }
+  .stat {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+  .stat .n { font-size: 1.6rem; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .stat .l { color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  a { color: var(--ours); text-decoration: none; border-bottom: 1px dotted var(--border); }
+  a:hover { border-bottom-color: var(--ours); }
+  blockquote {
+    border-left: 2px solid var(--accent);
+    margin: 1rem 0;
+    padding: 0.1rem 1.25rem;
+    color: var(--fg);
+    font-style: italic;
+  }
+  @media (max-width: 600px) {
+    .progression { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>clipboard-lab</h1>
+<p class="subtitle">Five macOS clipboard managers built from scratch, ranked blind against five real ones by a reviewer with no memory of who built what.</p>
+</header>
+
+<section class="tldr">
+<p><strong>The experiment:</strong> build five clipboard history managers (clip-01 through clip-05), each iteration addressing the previous one's weaknesses. Test alongside Raycast, Maccy, Alfred, Clipy, and Flycut. Anonymize all ten into identical spec sheets. Hand them to a fresh reviewer with zero context. See where ours land.</p>
+<p><strong>The result:</strong> ours took 1st, 2nd, and 5th. Mean rank 4.6 for ours vs 6.4 for existing. Every iteration moved up in the final ranking. The reviewer called clip-05 <em>"the strongest clipboard-first design in the set"</em> without knowing we built it.</p>
+<p><strong>The asterisk:</strong> this was a spec-sheet review, not a product review. Nobody ran any of the ten apps for more than three seconds. Keep reading.</p>
+</section>
+
+<h2>Final blind ranking</h2>
+<table>
+<thead><tr><th class="rank">#</th><th>Entry</th><th>Actual</th><th>Origin</th><th>Reviewer verdict</th></tr></thead>
+<tbody>
+<tr><td class="rank">1</td><td class="mono">entry-G</td><td><strong>clip-05</strong></td><td><span class="chip ours">ours</span></td><td class="verdict">Best overall balance of secure storage, fast recall, image handling, and polished local UX.</td></tr>
+<tr><td class="rank">2</td><td class="mono">entry-A</td><td><strong>clip-04</strong></td><td><span class="chip ours">ours</span></td><td class="verdict">Strong secure specialist with excellent query power, fewer workflow conveniences.</td></tr>
+<tr><td class="rank">3</td><td class="mono">entry-F</td><td>Raycast</td><td><span class="chip existing">existing</span></td><td class="verdict">Broad, polished feature set with encryption, clipboard specifics less transparent.</td></tr>
+<tr><td class="rank">4</td><td class="mono">entry-J</td><td>Maccy</td><td><span class="chip existing">existing</span></td><td class="verdict">Dependable keyboard-first tool with pinning and large history, minus security detail.</td></tr>
+<tr><td class="rank">5</td><td class="mono">entry-C</td><td><strong>clip-03</strong></td><td><span class="chip ours">ours</span></td><td class="verdict">Clean fundamentals with structured search and settings, but plaintext storage.</td></tr>
+<tr><td class="rank">6</td><td class="mono">entry-E</td><td>Alfred</td><td><span class="chip existing">existing</span></td><td class="verdict">Capable add-on with snippets, but sparse low-level implementation detail.</td></tr>
+<tr><td class="rank">7</td><td class="mono">entry-D</td><td><strong>clip-02</strong></td><td><span class="chip ours">ours</span></td><td class="verdict">Practical local utility with image support and quick-picks, limited by config-first setup.</td></tr>
+<tr><td class="rank">8</td><td class="mono">entry-B</td><td><strong>clip-01</strong></td><td><span class="chip ours">ours</span></td><td class="verdict">Correct minimalist history tool, but thin search, settings, and protection depth.</td></tr>
+<tr><td class="rank">9</td><td class="mono">entry-H</td><td>Flycut</td><td><span class="chip existing">existing</span></td><td class="verdict">Narrow text-only utility with favorites, behind on modern clipboard breadth.</td></tr>
+<tr><td class="rank">10</td><td class="mono">entry-I</td><td>Clipy</td><td><span class="chip existing">existing</span></td><td class="verdict">Fragmented, weakly specified, missing the search-first recall flow this category needs.</td></tr>
+</tbody>
+</table>
+
+<h2>Iteration progression</h2>
+<p>Every iteration moved up. clip-01 shipped as a bare baseline at 8th; four rounds of build → self-review → simplify → team-review produced clip-05 at 1st.</p>
+
+<div class="progression">
+  <div class="iter"><div class="name">clip-01</div><div class="rank-badge">8</div><div class="loc">898 LOC</div></div>
+  <div class="iter"><div class="name">clip-02</div><div class="rank-badge">7</div><div class="loc">1,412 LOC</div></div>
+  <div class="iter"><div class="name">clip-03</div><div class="rank-badge">5</div><div class="loc">2,071 LOC</div></div>
+  <div class="iter"><div class="name">clip-04</div><div class="rank-badge">2</div><div class="loc">2,392 LOC</div></div>
+  <div class="iter"><div class="name">clip-05</div><div class="rank-badge">1</div><div class="loc">3,499 LOC</div></div>
+</div>
+
+<h3>What each iteration added</h3>
+<ul>
+  <li><strong>clip-01</strong> — core loop: pasteboard polling, SQLite at <code>0600</code>, Carbon global hotkey, 200-entry ring, concealed-type exclusion.</li>
+  <li><strong>clip-02</strong> — explicit keyboard controls (arrows / enter / escape / ⌘1-9), PNG image storage with metadata, config-driven privacy (per-app exclusions, max-bytes, pause toggle), FSEvents reload.</li>
+  <li><strong>clip-03</strong> — real AppKit settings window, query DSL (<code>type:</code>, <code>app:</code>, <code>after:</code>, quoted phrases), URL clips as distinct kind, 13-case parser harness.</li>
+  <li><strong>clip-04</strong> — AES-GCM payload encryption, Keychain-backed key management, NSDataDetector URL detection, broad settings (retention, polling, hotkey modifiers, auto-start).</li>
+  <li><strong>clip-05</strong> — HMAC-indexed encrypted search (no plaintext searchable text), Vision.framework on-device OCR for image clips, lazy-load history panel, debounced search, 31-case verifier, NSVisualEffectView polish, dark mode.</li>
+</ul>
+
+<h2>How the blind review worked</h2>
+<ul>
+  <li>All 10 entries were distilled into identical spec-sheet format — 6 files each: <code>summary</code>, <code>features</code>, <code>security</code>, <code>storage</code>, <code>performance</code>, <code>ux</code>.</li>
+  <li>Letters A-J were shuffled over the 10 apps. The reviewer saw only the letters.</li>
+  <li>Every product name, source link, build tooling mention, and identifying string was scrubbed from the entries.</li>
+  <li>File mtimes were normalized so creation order couldn't leak iteration.</li>
+  <li>The reviewer ran in an isolated <code>/tmp/</code> directory — no path back to the lab's <code>SPEC.md</code> or <code>CONTEXT.md</code>.</li>
+  <li>The reviewer was told: "you have no prior knowledge of these products; rank objectively; do not guess identities."</li>
+</ul>
+
+<h2>Stats</h2>
+<div class="stats">
+  <div class="stat"><div class="n">10,272</div><div class="l">total LOC across 5 builds</div></div>
+  <div class="stat"><div class="n">56</div><div class="l">Swift source files</div></div>
+  <div class="stat"><div class="n">5/5</div><div class="l">builds smoke-test ✓</div></div>
+  <div class="stat"><div class="n">31</div><div class="l">tests in clip-05</div></div>
+  <div class="stat"><div class="n">4.6</div><div class="l">mean rank, ours</div></div>
+  <div class="stat"><div class="n">6.4</div><div class="l">mean rank, existing</div></div>
+</div>
+
+<h2>Caveats — read before celebrating</h2>
+<div class="caveats">
+<ul>
+  <li><strong>Spec-sheet review, not product review.</strong> The reviewer never ran any app. A clipboard manager is judged by feel over weeks of daily use. No amount of written documentation captures that.</li>
+  <li><strong>Documentation advantage.</strong> Our five came with detailed threat models answering exactly the questions a security/perf reviewer asks. The existing five were summarized from public marketing pages and OSS README skims. Same doc depth on both sides would have changed the ranking.</li>
+  <li><strong>Our builds are unsigned and untested at scale.</strong> Raycast and Maccy have years of real-world bug reports, Accessibility-flow polish, release tracking, and edge-case handling we haven't touched. We shipped five .app bundles that launched cleanly once.</li>
+  <li><strong>One reviewer, not a panel.</strong> A different blind reviewer with different priors could invert several positions. Alfred and Clipy especially lost points for sparse public clipboard-specific docs — not because the products are weak.</li>
+  <li><strong>This is a signal about iteration discipline, not a product claim.</strong> What it shows is that five rounds of build/self-review/simplify/team-review produce a codebase that a fresh reviewer reads as thorough. It does not show that clip-05 would replace Raycast in daily use. It wouldn't.</li>
+</ul>
+</div>
+
+<h2>The honest headline</h2>
+<blockquote>The iterate-then-critique loop produces impressively deep documentation and a working codebase. On paper, clip-05 outranks the strongest free existing macOS clipboard managers. In practice, the existing apps would probably win a real-world head-to-head on polish, reliability, and all the thousand things you only learn by shipping to real users.</blockquote>
+
+<h2>How it was built</h2>
+<p>Claude (orchestrator) wrote the spec and held the blind-review manifest. Every build, review, simplification, and team-review pass was dispatched to Codex via <code>codex exec --full-auto</code> running in a sandboxed workspace. Claude held only the thin coordination state — reading short summary files, never the 10,000+ lines of Swift. Total Claude-side token cost for the experiment: well under 100k.</p>
+
+<footer>
+<p>All artifacts — specs, source trees, threat models, per-iteration reviews, blind ranking, and unblinding — in <code>clipboard-lab/</code>. Experiment complete.</p>
+</footer>
+
+</div>
+</body>
+</html>

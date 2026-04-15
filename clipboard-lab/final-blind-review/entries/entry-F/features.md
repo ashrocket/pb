@@ -1,0 +1,10 @@
+- History depth: time-based retention up to 3 months; exact item-count cap not documented.
+- Search: yes; filtering/searching inside history is documented.
+- Image support: yes.
+- Pinning: yes; pinned items can be kept indefinitely.
+- Snippets: yes; implemented as a separate snippets system.
+- Sync: limited; shared snippets exist for teams, but clipboard history itself is not documented as synced or migrated.
+- Hotkey: yes; custom alias or hotkey supported, but no fixed default was documented.
+- Settings UI: yes; clipboard history is part of a broader integrated preferences surface.
+- OCR: not clearly documented.
+- Query syntax: search/filter UI is documented, but no fielded query grammar was documented.

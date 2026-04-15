@@ -1,0 +1,10 @@
+- History depth: configurable; default 200 entries.
+- Search: yes; structured query parsing plus free-text terms.
+- Image support: yes.
+- Pinning: no documented pinning feature.
+- Snippets: no.
+- Sync: no.
+- Hotkey: yes; `V` is fixed and the modifier set is configurable, defaulting to `Command + Shift + V`.
+- Settings UI: yes; retention, polling, excluded apps, hotkey modifiers, clip size, and login behavior are configurable.
+- OCR: no.
+- Query syntax: supports `type:`, `app:`, `after:`, `encrypted:`, quoted phrases, and `image:`.

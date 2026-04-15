@@ -1,0 +1,10 @@
+- History depth: configurable; reviewed materials suggest a practical upper boundary around 999 items.
+- Search: yes; type-to-search is documented.
+- Image support: yes.
+- Pinning: yes.
+- Snippets: no documented snippet system.
+- Sync: no documented sync.
+- Hotkey: yes; default `Shift + Command + C`.
+- Settings UI: yes; history size and related behavior are user-configurable.
+- OCR: product releases mention OCR/search inside images.
+- Query syntax: free-text search only; no documented field grammar.

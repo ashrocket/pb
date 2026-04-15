@@ -1,0 +1,899 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.xctest/Contents/MacOS/clip-05PackageTests",
+      "packagePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05",
+      "productName" : "clip-05PackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Clip05App-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/sources",
+      "importPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipboardPoller.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Encryption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HistoryWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HotkeyManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ImageDecoding.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/MenuBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/OCRService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/QueryParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SearchIndex.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SettingsWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Store.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/URLDetector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Clip05App",
+      "moduleOutputPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules/Clip05App.swiftmodule",
+      "objects" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipConfiguration.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipboardPoller.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Encryption.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HistoryWindow.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HotkeyManager.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ImageDecoding.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/MenuBar.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/OCRService.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/QueryParser.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SearchIndex.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SettingsWindow.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Store.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/URLDetector.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Clip05App_main",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "clip_05",
+        "-disable-sandbox"
+      ],
+      "outputFileMapPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipboardPoller.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Encryption.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HistoryWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HotkeyManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ImageDecoding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/MenuBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/OCRService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/QueryParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SearchIndex.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SettingsWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Store.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/URLDetector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules/Clip05App.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipConfiguration.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipboardPoller.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Encryption.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HistoryWindow.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HotkeyManager.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ImageDecoding.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/MenuBar.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/OCRService.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/QueryParser.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SearchIndex.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SettingsWindow.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Store.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/URLDetector.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/main.swift"
+      ],
+      "tempsPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Clip05HarnessTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/sources",
+      "importPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Tests/QueryParserTests/QueryParserTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Clip05HarnessTests",
+      "moduleOutputPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules/Clip05HarnessTests.swiftmodule",
+      "objects" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/QueryParserTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "clip_05",
+        "-disable-sandbox"
+      ],
+      "outputFileMapPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/QueryParserTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules/Clip05HarnessTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Tests/QueryParserTests/QueryParserTests.swift"
+      ],
+      "tempsPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.clip-05PackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/sources",
+      "importPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules/Clip05HarnessTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "clip_05PackageTests",
+      "moduleOutputPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules/clip_05PackageTests.swiftmodule",
+      "objects" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/include/clip-05PackageTests-Swift.h",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "clip_05",
+        "-disable-sandbox"
+      ],
+      "outputFileMapPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules/clip_05PackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Clip05App" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Clip05App",
+      "-package-name",
+      "clip_05",
+      "-c",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipConfiguration.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipboardPoller.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Encryption.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HistoryWindow.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HotkeyManager.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ImageDecoding.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/MenuBar.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/OCRService.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/QueryParser.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SearchIndex.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SettingsWindow.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Store.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/URLDetector.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/main.swift",
+      "-I",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Clip05App_main",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "clip_05",
+      "-disable-sandbox",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "Clip05HarnessTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Clip05HarnessTests",
+      "-package-name",
+      "clip_05",
+      "-c",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Tests/QueryParserTests/QueryParserTests.swift",
+      "-I",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "clip_05",
+      "-disable-sandbox",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "clip_05PackageTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "clip_05PackageTests",
+      "-package-name",
+      "clip_05",
+      "-c",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.derived/runner.swift",
+      "-I",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/include/clip-05PackageTests-Swift.h",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "clip_05",
+      "-disable-sandbox",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Clip05App" : [
+
+    ],
+    "Clip05HarnessTests" : [
+      "Clip05App"
+    ],
+    "clip_05PackageTests" : [
+      "Clip05HarnessTests",
+      "Clip05App"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ClipboardPoller.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Encryption.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HistoryWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/HotkeyManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/ImageDecoding.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/MenuBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/OCRService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/QueryParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SearchIndex.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/SettingsWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/Store.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/URLDetector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Sources/clip-05/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/sources"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/Tests/QueryParserTests/QueryParserTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/sources"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05-entitlement.plist"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipboardPoller.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Encryption.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HistoryWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HotkeyManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ImageDecoding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/MenuBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/OCRService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/QueryParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SearchIndex.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SettingsWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Store.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/URLDetector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05.product/Objects.LinkFileList"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ClipboardPoller.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Encryption.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HistoryWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/HotkeyManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/ImageDecoding.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/MenuBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/OCRService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/QueryParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SearchIndex.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/SettingsWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/Store.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/URLDetector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05App.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/Clip05HarnessTests.build/QueryParserTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/runner.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip-05PackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/clip_05PackageTests.build/sources"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

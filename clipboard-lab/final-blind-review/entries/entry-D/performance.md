@@ -1,0 +1,6 @@
+- Polling interval: 0.75-second timer with tolerance.
+- Search speed claim: no benchmark was documented; the implementation remains a small local search path.
+- Memory footprint: unknown; no numeric claim documented.
+- Startup cost: not documented.
+- Known hot paths: PNG encode/decode work and config-watcher reload churn were the most obvious implementation pressure points.
+- Notes: a reviewer explicitly called the PNG conversion plus 1 MB cap the main performance correction relative to simpler designs.

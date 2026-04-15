@@ -1,0 +1,6 @@
+- Storage path: likely a preferences plist under `~/Library/Preferences/`; the exact bundle-specific filename was not published in the reviewed materials.
+- Format: plist-backed preferences storage rather than SQLite.
+- File permissions: not documented.
+- Size caps: default 40-item history and 40-item favorites store.
+- Retention policy: size-based retention in the remembered and favorites stacks.
+- Notes: the design is operationally simple but less auditable than a single structured database file.

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/debug/QueryParserTests.build/master.swiftdeps"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/Tests/QueryParserTests/QueryParserTests.swift": {
+    "dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/debug/QueryParserTests.build/QueryParserTests.d",
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/debug/QueryParserTests.build/QueryParserTests.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/debug/QueryParserTests.build/QueryParserTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/debug/QueryParserTests.build/QueryParserTests.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/debug/QueryParserTests.build/QueryParserTests.dia"
+  }
+}

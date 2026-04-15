@@ -1,0 +1,10 @@
+- History depth: configurable; default 250 entries.
+- Search: yes; encrypted token-prefix search plus structured filters.
+- Image support: yes; thumbnails, preview pane, and image metadata are documented.
+- Pinning: no documented pinning feature.
+- Snippets: no.
+- Sync: no.
+- Hotkey: yes; `V` is fixed and the modifier set is configurable, defaulting to `Command + Shift + V`.
+- Settings UI: yes; retention, polling, excluded apps, login behavior, clip size, and hotkey modifiers are configurable.
+- OCR: yes; on-device OCR is used for image clips.
+- Query syntax: supports free terms, quoted phrases, `type:`, `app:`, `after:`, `encrypted:`, and `image:`.

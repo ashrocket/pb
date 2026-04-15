@@ -1,0 +1,10 @@
+- History depth: configurable; defaults are 40 remembered items plus 40 favorites.
+- Search: yes; a menu search box is documented.
+- Image support: no documented image-history support.
+- Pinning: favorites exist, but there is no generic pin/unpin surface.
+- Snippets: no documented snippet system.
+- Sync: optional iCloud sync is documented.
+- Hotkey: yes; default `Shift + Command + V`.
+- Settings UI: yes; preferences expose stack size and sync behavior.
+- OCR: no.
+- Query syntax: none documented.

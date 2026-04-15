@@ -1,0 +1,7 @@
+- Concealed/transient handling: yes; concealed and transient pasteboard types are skipped.
+- Storage encryption: yes; payloads and OCR metadata are encrypted before storage.
+- Key management: Keychain-backed random root material is used to derive separate payload-encryption and search-index keys.
+- Password-manager exclusions: no dedicated presets were documented; generic excluded app bundle IDs are supported.
+- Network behavior: local only by design; no telemetry, sync, or intentional network traffic was documented.
+- Process isolation: no special process isolation; the written model explicitly treats unlocked-session and same-user live-memory attacks as out of scope.
+- Threat model completeness: very strong; the written model covers encrypted search, OCR handling, key storage, residual metadata leakage, and explicit non-goals.

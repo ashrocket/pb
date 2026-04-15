@@ -1,0 +1,6 @@
+- Hotkey ergonomics: good; default `Command + Shift + V` with configurable modifier presets.
+- Keyboard navigation: strong dedicated-panel model with search, previews, and quick interaction flow.
+- Visual polish: the strongest among the local-only specialist entries, with thumbnails and a preview pane.
+- First-run experience: reasonably approachable for a security-focused tool because key behavior is exposed in settings.
+- Settings discoverability: high; the settings surface is broad and local.
+- Dark mode: not documented.

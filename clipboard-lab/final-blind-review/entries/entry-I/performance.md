@@ -1,0 +1,6 @@
+- Polling interval: reviewed source uses an Rx interval of `.microseconds(750)`; taken literally, that would be a 0.75 ms poll cadence.
+- Search speed claim: not documented.
+- Memory footprint: not documented.
+- Startup cost: not documented.
+- Known hot paths: aggressive polling, thumbnail generation, and split persistence are the most likely hot paths.
+- Notes: no published benchmark or resource-usage claims were found.

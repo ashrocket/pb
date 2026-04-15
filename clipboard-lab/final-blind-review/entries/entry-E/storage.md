@@ -1,0 +1,6 @@
+- Storage path: partially documented; clipboard data lives somewhere under `~/Library/Application Support/<app>/`, but the exact current subpath was not published.
+- Format: `clipboard.db`; the exact database engine was not documented.
+- File permissions: not documented.
+- Size caps: large text clips can be ignored through a configurable maximum clip size, but no numeric default was published.
+- Retention policy: time-based retention up to 3 months.
+- Notes: clearing clipboard history is documented as rebuilding `clipboard.db`.

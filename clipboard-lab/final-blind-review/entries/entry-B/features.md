@@ -1,0 +1,10 @@
+- History depth: fixed 200 entries.
+- Search: yes; literal substring search over stored metadata.
+- Image support: yes.
+- Pinning: no documented pinning feature.
+- Snippets: no.
+- Sync: no.
+- Hotkey: yes; default `Command + Shift + V`.
+- Settings UI: no documented settings surface.
+- OCR: no.
+- Query syntax: free-text search only; no field filters documented.

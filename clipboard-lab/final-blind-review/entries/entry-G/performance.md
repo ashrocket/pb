@@ -1,0 +1,6 @@
+- Polling interval: configurable; default 0.60 seconds and clamped to a minimum of 0.10 seconds.
+- Search speed claim: search is debounced by 200 ms and designed to avoid decrypt-and-scan behavior.
+- Memory footprint: unknown; no numeric claim documented.
+- Startup cost: optimized by deferring OCR-service and settings-window setup until after the menu item is live.
+- Known hot paths: OCR, image decoding, preview generation, and HMAC prefix-index maintenance.
+- Notes: the history panel loads 20 clips at a time and fetches more on scroll.

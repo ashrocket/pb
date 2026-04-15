@@ -1,0 +1,7 @@
+- Concealed/transient handling: yes; concealed and transient pasteboard types are skipped.
+- Storage encryption: yes; payloads are encrypted with `AES.GCM` before insertion into SQLite.
+- Key management: random passphrase and salt are stored in the macOS Keychain, then used to derive the runtime payload key.
+- Password-manager exclusions: no dedicated presets were documented; generic excluded app bundle IDs are supported.
+- Network behavior: local only; no telemetry, sync, or update checks were documented.
+- Process isolation: no special process isolation; the written model explicitly keeps same-user live-memory and unlocked-session risks in scope.
+- Threat model completeness: strong; the written model covers key creation, storage, loss scenarios, rotation limits, and residual metadata leaks.

@@ -1,0 +1,7 @@
+- Concealed/transient handling: yes; concealed, transient, auto-generated, and some password-manager types are skipped by default.
+- Storage encryption: not documented.
+- Key management: not applicable in the reviewed materials.
+- Password-manager exclusions: yes; password-manager-specific pasteboard types are skipped by default.
+- Network behavior: optional iCloud sync is documented; no separate telemetry path was identified in the reviewed code skim.
+- Process isolation: not documented.
+- Threat model completeness: no formal threat model was published.

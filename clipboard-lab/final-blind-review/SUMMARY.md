@@ -1,0 +1,12 @@
+# SUMMARY
+- Built `final-blind-review/entries/` with ten randomized anonymized entry directories.
+- Wrote six normalized files per entry: summary, features, security, storage, performance, and ux.
+- Wrote `final-blind-review/entries/README.md` as the blind reviewer’s only context.
+- Wrote private mapping to `final-blind-review/manifest.json` and flagged it in `.reviewer-ignore`.
+- Redacted product names from entry files and normalized branded storage-directory segments to `<app>` where needed.
+- Kept unverifiable claims marked as `unknown`, `not documented`, or equivalent.
+- Wrote `ANONYMIZE_SUMMARY.md` with the randomized mapping and anti-leak note.
+- Verified there are exactly six files in each `entry-*` directory and no banned origin strings in `entries/`.
+- Normalized timestamps across all files under `final-blind-review/entries/`.
+- Marked `anonymize.done` as `DONE`.
+- Next useful check: run blind review from `final-blind-review/entries/` only.

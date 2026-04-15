@@ -1,0 +1,10 @@
+- History depth: configurable; reviewed source uses a default maximum of 30 items.
+- Search: no documented search surface was found.
+- Image support: yes; images are stored and thumbnailed, and PDF/file/URL types are also handled.
+- Pinning: no documented pinning feature.
+- Snippets: yes; snippet folders, hotkeys, and an editor window are documented.
+- Sync: no documented sync.
+- Hotkey: yes; default menus include `Command + Shift + V`, `Command + Control + V`, and `Command + Shift + B`.
+- Settings UI: yes; preferences and a snippets editor are documented.
+- OCR: not documented.
+- Query syntax: none documented.

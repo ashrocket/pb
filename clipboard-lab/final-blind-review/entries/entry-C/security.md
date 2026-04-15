@@ -1,0 +1,7 @@
+- Concealed/transient handling: yes; concealed and transient pasteboard types are skipped.
+- Storage encryption: none; payloads remain plaintext at rest.
+- Key management: not applicable.
+- Password-manager exclusions: no dedicated password-manager presets, but generic excluded bundle IDs are supported.
+- Network behavior: local only; no telemetry, sync, updater, or remote API integration was documented.
+- Process isolation: no special isolation beyond file permissions; same-user local processes remain in scope.
+- Threat model completeness: explicit written threat model with documented controls, gaps, and assumptions.

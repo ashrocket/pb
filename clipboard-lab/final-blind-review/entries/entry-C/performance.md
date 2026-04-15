@@ -1,0 +1,6 @@
+- Polling interval: 0.75-second timer with tolerance.
+- Search speed claim: no benchmark was documented; the design favors a small, predictable local query grammar.
+- Memory footprint: unknown; no numeric claim documented.
+- Startup cost: not documented.
+- Known hot paths: plaintext substring search over the database index and image preview generation.
+- Notes: config-watcher scope was tightened specifically to avoid unnecessary reload churn from unrelated file events.

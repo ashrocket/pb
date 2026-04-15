@@ -1,0 +1,6 @@
+- Storage path: `~/Library/Application Support/<app>/Storage.sqlite`.
+- Format: SQLite-backed model storage.
+- File permissions: not documented.
+- Size caps: history size is user-configurable; public issue discussion suggests a practical limit around 999 items.
+- Retention policy: size-based trimming rather than time-based retention.
+- Encryption-at-rest status: not documented.

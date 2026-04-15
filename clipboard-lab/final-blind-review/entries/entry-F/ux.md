@@ -1,0 +1,6 @@
+- Hotkey ergonomics: customizable, but no default clipboard-history shortcut was documented.
+- Keyboard navigation: likely strong within the broader launcher-style UI, though clipboard-specific key flows were only partially documented.
+- Visual polish: high; this entry reads as the most productized and integrated design in the set.
+- First-run experience: clipboard history is one feature inside a larger app rather than a standalone first-run flow.
+- Settings discoverability: high; preferences are part of a mature integrated UI.
+- Dark mode: not documented in the reviewed materials.

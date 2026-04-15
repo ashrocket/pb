@@ -1,0 +1,6 @@
+- Hotkey ergonomics: strong; default `Shift + Command + C` is easy to memorize for a dedicated tool.
+- Keyboard navigation: strong keyboard-first positioning is part of the documented design.
+- Visual polish: lean and utility-first rather than expansive.
+- First-run experience: appears straightforward, with a small dedicated scope.
+- Settings discoverability: good; key retention and polling controls are documented as configurable.
+- Dark mode: not documented in the reviewed materials.

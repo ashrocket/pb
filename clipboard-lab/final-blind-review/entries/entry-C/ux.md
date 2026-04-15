@@ -1,0 +1,6 @@
+- Hotkey ergonomics: strong dedicated shortcut with quick-pick support.
+- Keyboard navigation: explicit arrow, return, escape, and quick-pick controls are documented.
+- Visual polish: more complete than a raw utility, with a real settings window and richer search hints.
+- First-run experience: improved by the presence of a graphical settings surface instead of config-only setup.
+- Settings discoverability: good; a dedicated preferences window is present.
+- Dark mode: not documented.

@@ -1,0 +1,7 @@
+- Concealed/transient handling: yes; skips `org.nspasteboard.ConcealedType` and `org.nspasteboard.TransientType`.
+- Storage encryption: none; data is stored in plaintext SQLite.
+- Key management: not applicable.
+- Password-manager exclusions: no dedicated app-level exclusion list was documented.
+- Network behavior: local only; no telemetry, sync, or update checks were documented.
+- Process isolation: no special isolation beyond file permissions; same-user local processes remain in scope.
+- Threat model completeness: explicit written threat model with assets, adversaries, enforced controls, and stated gaps.

@@ -1,0 +1,6 @@
+- Hotkey ergonomics: straightforward dedicated shortcut on `Command + Shift + V`.
+- Keyboard navigation: limited; reviewer notes flagged keyboard replay flow as shallow.
+- Visual polish: utilitarian floating history panel.
+- First-run experience: simple menu bar scope, with no documented onboarding.
+- Settings discoverability: none; no settings UI was documented.
+- Dark mode: not documented.

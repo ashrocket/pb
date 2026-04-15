@@ -1,0 +1,6 @@
+- Storage path: `~/Library/Application Support/<app>/history.sqlite`.
+- Companion settings file: `~/Library/Application Support/<app>/config.toml`.
+- Format: SQLite database with encrypted payload blobs and plaintext searchable text.
+- File permissions: support directory `0700`; database `0600`; config file permissions are enforced locally.
+- Size caps: configurable retention count with a default of 200 entries; default 1 MB maximum size per clip.
+- Retention policy: size-based retention according to the configured history count.

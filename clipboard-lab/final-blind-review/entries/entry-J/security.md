@@ -1,0 +1,7 @@
+- Concealed/transient handling: yes; concealed, transient, and auto-generated pasteboard types are ignored by default.
+- Storage encryption: unknown.
+- Key management: not documented.
+- Password-manager exclusions: yes; multiple password-manager-specific pasteboard types are ignored by default.
+- Network behavior: app-level update networking is likely present, but clipboard-specific networking was not documented.
+- Process isolation: not documented.
+- Threat model completeness: no formal threat model was published.

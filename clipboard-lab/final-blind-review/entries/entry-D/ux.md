@@ -1,0 +1,6 @@
+- Hotkey ergonomics: good; the primary shortcut stays simple and quick-pick shortcuts reduce selection friction.
+- Keyboard navigation: explicit `Up`, `Down`, `Return`, `Escape`, and quick-pick keys are documented.
+- Visual polish: still utility-first rather than highly polished.
+- First-run experience: behavior is understandable, but key privacy settings require editing or understanding a config file.
+- Settings discoverability: weaker than entries with a real preferences window.
+- Dark mode: not documented.

@@ -1,0 +1,191 @@
+== Initial build attempt 1 ==
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-02': failed loading cached manifest for 'clip-02': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x7ef590240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed storing manifest for 'clip-02' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x7ef590090 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x7ef5903c0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/5] Compiling Clip02App ClipConfiguration.swift
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:40:13: error: variable 'self.currentConfiguration' used before being initialized
+ 38 |         configURL = supportDirectoryURL.appendingPathComponent("config.toml", isDirectory: false)
+ 39 | 
+ 40 |         try ensureDefaultConfigExists()
+    |             `- error: variable 'self.currentConfiguration' used before being initialized
+ 41 |         currentConfiguration = try loadConfiguration()
+ 42 |     }
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:41:36: error: variable 'self.currentConfiguration' used before being initialized
+ 39 | 
+ 40 |         try ensureDefaultConfigExists()
+ 41 |         currentConfiguration = try loadConfiguration()
+    |                                    `- error: variable 'self.currentConfiguration' used before being initialized
+ 42 |     }
+ 43 | 
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift:42:9: error: cannot access property 'keyMonitor' with a non-Sendable type 'Any?' from nonisolated deinit
+ 40 | 
+ 41 |     deinit {
+ 42 |         if let keyMonitor {
+    |         `- error: cannot access property 'keyMonitor' with a non-Sendable type 'Any?' from nonisolated deinit
+ 43 |             NSEvent.removeMonitor(keyMonitor)
+ 44 |         }
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:208:24: error: sending 'controller' risks causing data races [#SendingRisksDataRace]
+206 |     if changedPaths.contains(where: { $0.hasSuffix("/config.toml") || $0.hasSuffix("/clip-02") }) {
+207 |         DispatchQueue.main.async {
+208 |             controller.reloadFromDisk()
+    |                        |- error: sending 'controller' risks causing data races [#SendingRisksDataRace]
+    |                        `- note: task-isolated 'controller' is captured by a main actor-isolated closure. main actor-isolated uses in closure may race against later nonisolated uses
+209 |         }
+210 |     }
+
+[#SendingRisksDataRace]: <https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race>
+== Initial build attempt 2 ==
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-02': failed loading cached manifest for 'clip-02': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x713590240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed storing manifest for 'clip-02' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x713590090 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x7135903c0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+[0/1] Planning build
+Building for production...
+[0/3] Write swift-version--1AB21518FC5DEDBE.txt
+[2/4] Compiling Clip02App ClipConfiguration.swift
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:40:13: error: variable 'self.currentConfiguration' used before being initialized
+ 38 |         configURL = supportDirectoryURL.appendingPathComponent("config.toml", isDirectory: false)
+ 39 | 
+ 40 |         try ensureDefaultConfigExists()
+    |             `- error: variable 'self.currentConfiguration' used before being initialized
+ 41 |         currentConfiguration = try loadConfiguration()
+ 42 |     }
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:41:36: error: variable 'self.currentConfiguration' used before being initialized
+ 39 | 
+ 40 |         try ensureDefaultConfigExists()
+ 41 |         currentConfiguration = try loadConfiguration()
+    |                                    `- error: variable 'self.currentConfiguration' used before being initialized
+ 42 |     }
+ 43 | 
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift:42:9: error: cannot access property 'keyMonitor' with a non-Sendable type 'Any?' from nonisolated deinit
+ 40 | 
+ 41 |     deinit {
+ 42 |         if let keyMonitor {
+    |         `- error: cannot access property 'keyMonitor' with a non-Sendable type 'Any?' from nonisolated deinit
+ 43 |             NSEvent.removeMonitor(keyMonitor)
+ 44 |         }
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:208:24: error: sending 'controller' risks causing data races [#SendingRisksDataRace]
+206 |     if changedPaths.contains(where: { $0.hasSuffix("/config.toml") || $0.hasSuffix("/clip-02") }) {
+207 |         DispatchQueue.main.async {
+208 |             controller.reloadFromDisk()
+    |                        |- error: sending 'controller' risks causing data races [#SendingRisksDataRace]
+    |                        `- note: task-isolated 'controller' is captured by a main actor-isolated closure. main actor-isolated uses in closure may race against later nonisolated uses
+209 |         }
+210 |     }
+
+[#SendingRisksDataRace]: <https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race>
+== Initial build attempt 3 ==
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-02': failed loading cached manifest for 'clip-02': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x8af590240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed storing manifest for 'clip-02' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x8af590090 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x8af5903c0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for production...
+[0/3] Write swift-version--1AB21518FC5DEDBE.txt
+[2/4] Compiling Clip02App ClipConfiguration.swift
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:40:13: error: variable 'self.currentConfiguration' used before being initialized
+ 38 |         configURL = supportDirectoryURL.appendingPathComponent("config.toml", isDirectory: false)
+ 39 | 
+ 40 |         try ensureDefaultConfigExists()
+    |             `- error: variable 'self.currentConfiguration' used before being initialized
+ 41 |         currentConfiguration = try loadConfiguration()
+ 42 |     }
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:41:36: error: variable 'self.currentConfiguration' used before being initialized
+ 39 | 
+ 40 |         try ensureDefaultConfigExists()
+ 41 |         currentConfiguration = try loadConfiguration()
+    |                                    `- error: variable 'self.currentConfiguration' used before being initialized
+ 42 |     }
+ 43 | 
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift:42:9: error: cannot access property 'keyMonitor' with a non-Sendable type 'Any?' from nonisolated deinit
+ 40 | 
+ 41 |     deinit {
+ 42 |         if let keyMonitor {
+    |         `- error: cannot access property 'keyMonitor' with a non-Sendable type 'Any?' from nonisolated deinit
+ 43 |             NSEvent.removeMonitor(keyMonitor)
+ 44 |         }
+
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:208:24: error: sending 'controller' risks causing data races [#SendingRisksDataRace]
+206 |     if changedPaths.contains(where: { $0.hasSuffix("/config.toml") || $0.hasSuffix("/clip-02") }) {
+207 |         DispatchQueue.main.async {
+208 |             controller.reloadFromDisk()
+    |                        |- error: sending 'controller' risks causing data races [#SendingRisksDataRace]
+    |                        `- note: task-isolated 'controller' is captured by a main actor-isolated closure. main actor-isolated uses in closure may race against later nonisolated uses
+209 |         }
+210 |     }
+
+[#SendingRisksDataRace]: <https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race>
+== Post-fix build attempt ==
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-02': failed loading cached manifest for 'clip-02': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xbbb594240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed storing manifest for 'clip-02' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xbbb5940c0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xbbb5943c0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/5] Compiling Clip02App ClipConfiguration.swift
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift:46:9: error: call to main actor-isolated instance method 'stopMonitoring()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 44 | 
+ 45 |     deinit {
+ 46 |         stopMonitoring()
+    |         `- error: call to main actor-isolated instance method 'stopMonitoring()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 47 |     }
+ 48 | 
+    :
+ 96 |     }
+ 97 | 
+ 98 |     private func stopMonitoring() {
+    |                  `- note: calls to instance method 'stopMonitoring()' from outside of its actor context are implicitly asynchronous
+ 99 |         guard let stream else {
+100 |             return
+
+[#ActorIsolatedCall]: <https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call>
+== Post-fix build attempt 2 ==
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-02': failed loading cached manifest for 'clip-02': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa07594240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed storing manifest for 'clip-02' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa07594090 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xa075943c0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/5] Compiling Clip02App ClipConfiguration.swift
+[3/5] Write Objects.LinkFileList
+[4/5] Linking clip-02
+Build complete! (1.59s)
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/build/clip-02.app
+== Simplification rebuild ==
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-02': failed loading cached manifest for 'clip-02': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x89b590240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed storing manifest for 'clip-02' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x89b590090 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-02': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0x89b5903c0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for production...
+[0/3] Write sources
+[1/3] Write swift-version--1AB21518FC5DEDBE.txt
+[3/4] Compiling Clip02App ClipConfiguration.swift
+[3/5] Write Objects.LinkFileList
+[4/5] Linking clip-02
+Build complete! (1.83s)
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/build/clip-02.app

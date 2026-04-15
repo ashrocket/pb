@@ -1,0 +1,54 @@
+$ cd clipboard-lab/ours/clip-05 && ./scripts/build.sh
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-05': failed loading cached manifest for 'clip-05': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xb85594240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-05': failed storing manifest for 'clip-05' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xb85594870 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-05': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xb855949f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+[0/1] Planning build
+Building for production...
+[0/2] Write swift-version--1AB21518FC5DEDBE.txt
+Build complete! (0.10s)
+/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-05/build/clip-05.app
+
+$ swift test --disable-sandbox --build-path <temp-build-root>
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: /Users/ashleyraiteri/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'clip-05': failed loading cached manifest for 'clip-05': Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xc05578240 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-05': failed storing manifest for 'clip-05' in cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xc05578870 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+warning: 'clip-05': failed closing manifest db cache: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “manifests” in the folder “org.swift.swiftpm”." UserInfo={NSFilePath=/Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSURL=file:///Users/ashleyraiteri/Library/Caches/org.swift.swiftpm/manifests, NSUnderlyingError=0xc055789f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+Building for debugging...
+[0/11] /tmp/clip05-test-build-log-16149/arm64-apple-macosx/debug/clip-05PackageTests.derived/runner.swift
+[1/11] Write sources
+[3/11] Write clip-05-entitlement.plist
+[4/11] Write sources
+[5/11] Write swift-version--1AB21518FC5DEDBE.txt
+[7/25] Compiling Clip05App QueryParser.swift
+[8/25] Compiling Clip05App SettingsWindow.swift
+[9/25] Compiling Clip05App MenuBar.swift
+[10/25] Compiling Clip05App OCRService.swift
+[11/25] Compiling Clip05App URLDetector.swift
+[12/25] Compiling Clip05App HotkeyManager.swift
+[13/25] Compiling Clip05App SearchIndex.swift
+[14/25] Compiling Clip05App ImageDecoding.swift
+[15/25] Compiling Clip05App Store.swift
+[16/26] Emitting module Clip05App
+[17/26] Compiling Clip05App Encryption.swift
+[18/26] Compiling Clip05App HistoryWindow.swift
+[19/26] Compiling Clip05App ClipConfiguration.swift
+[20/26] Compiling Clip05App ClipboardPoller.swift
+[21/26] Compiling Clip05App main.swift
+[21/26] Write Objects.LinkFileList
+[22/26] Linking clip-05
+[23/26] Applying clip-05
+[25/28] Emitting module Clip05HarnessTests
+[26/28] Compiling Clip05HarnessTests QueryParserTests.swift
+[27/30] Compiling clip_05PackageTests runner.swift
+[28/30] Emitting module clip_05PackageTests
+[28/30] Write Objects.LinkFileList
+[29/30] Linking clip-05PackageTests
+Build complete! (50.64s)
+
+$ swiftc verifier && run
+Clip05Verifier: 31 cases passed

@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip_03PackageTests.build/clip_03PackageTests.d",
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip_03PackageTests.build/clip_03PackageTests.o",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip_03PackageTests.build/master.swiftdeps"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip-03PackageTests.derived/runner.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip_03PackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip_03PackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip_03PackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-03/.build/arm64-apple-macosx/release/clip_03PackageTests.build/runner.dia"
+  }
+}

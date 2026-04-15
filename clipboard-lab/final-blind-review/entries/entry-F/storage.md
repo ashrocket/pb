@@ -1,0 +1,6 @@
+- Storage path: unknown in the reviewed materials.
+- Format: unknown in the reviewed materials.
+- File permissions: unknown.
+- Size caps: text entries have a documented 32,768-character limit; other storage caps were not documented.
+- Retention policy: configurable by time window, up to 3 months.
+- Persistence scope: clipboard history is intentionally excluded from the documented Mac-to-Mac migration/export flow.

@@ -1,0 +1,6 @@
+- Storage path: partially documented; archived clip payloads live under `~/Library/Application Support/<app>/`, but the exact metadata database path was not explicitly set in the reviewed materials.
+- Format: Realm metadata plus archived sidecar payload files and cached thumbnail objects.
+- File permissions: not documented.
+- Size caps: default history size is 30 items; no separate database-size cap was documented.
+- Retention policy: size-based cleanup according to the configured maximum history size.
+- Notes: storage is split across multiple persistence layers rather than one database file.

@@ -1,0 +1,6 @@
+- Hotkey ergonomics: solid; default `Command + Shift + V` with modifier presets for different preferences.
+- Keyboard navigation: strong, with structured search hints and a familiar dedicated panel.
+- Visual polish: better than bare-bones utilities, with image preview support and fuller settings.
+- First-run experience: good for a specialist tool because major behavior is exposed in the settings window.
+- Settings discoverability: high; the settings surface is broad and explicit.
+- Dark mode: not documented.

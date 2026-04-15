@@ -1,0 +1,333 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Clip02App-arm64-apple-macosx26.0-release.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/sources",
+      "importPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipboardPoller.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HotkeyManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/MenuBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/Store.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Clip02App",
+      "moduleOutputPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Modules/Clip02App.swiftmodule",
+      "objects" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipConfiguration.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipboardPoller.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HistoryWindow.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HotkeyManager.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/MenuBar.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Store.swift.o",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "14",
+        "-serialize-diagnostics",
+        "-O",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Clip02App_main",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "clip_02"
+      ],
+      "outputFileMapPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipboardPoller.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HistoryWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HotkeyManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/MenuBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Store.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Modules/Clip02App.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipboardPoller.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HotkeyManager.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/MenuBar.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/Store.swift",
+        "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/main.swift"
+      ],
+      "tempsPath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Clip02App" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Clip02App",
+      "-package-name",
+      "clip_02",
+      "-c",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipboardPoller.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HotkeyManager.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/MenuBar.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/Store.swift",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/main.swift",
+      "-I",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "14",
+      "-serialize-diagnostics",
+      "-O",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Clip02App_main",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "clip_02",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Clip02App" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipboardPoller.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HotkeyManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/MenuBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/Store.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/sources"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/clip-02.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipboardPoller.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HistoryWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HotkeyManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/MenuBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Store.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/clip-02.product/Objects.LinkFileList"
+    },
+    "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/release/Clip04HarnessTests.build/Clip04HarnessTests.d",
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/release/Clip04HarnessTests.build/Clip04HarnessTests.o",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/release/Clip04HarnessTests.build/master.swiftdeps"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/Tests/QueryParserTests/QueryParserTests.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/release/Clip04HarnessTests.build/QueryParserTests.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/release/Clip04HarnessTests.build/QueryParserTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/release/Clip04HarnessTests.build/QueryParserTests.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-04/.build/arm64-apple-macosx/release/Clip04HarnessTests.build/QueryParserTests.dia"
+  }
+}

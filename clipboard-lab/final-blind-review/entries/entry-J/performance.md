@@ -1,0 +1,6 @@
+- Polling interval: 500 ms by default; documentation says it can be lowered to 100 ms.
+- Search speed claim: described only as lightweight and fast; no benchmark was published.
+- Memory footprint: no numeric claim documented.
+- Startup cost: not documented.
+- Known hot paths: larger image libraries and OCR/image-search features are the most obvious pressure points, but no benchmark data was published.
+- Notes: database size is surfaced in settings, suggesting operational attention to local footprint.

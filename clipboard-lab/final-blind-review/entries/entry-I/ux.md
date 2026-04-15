@@ -1,0 +1,6 @@
+- Hotkey ergonomics: broad shortcut coverage, though the number of distinct menus increases complexity.
+- Keyboard navigation: menu selection and numeric shortcuts are documented, but there is no documented modern search flow.
+- Visual polish: functional and older-style utility UI.
+- First-run experience: history and snippets are both present, which increases initial surface area.
+- Settings discoverability: reasonable, with dedicated menus and an editor window.
+- Dark mode: not documented in the reviewed materials.

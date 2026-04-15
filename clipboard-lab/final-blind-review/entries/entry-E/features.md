@@ -1,0 +1,10 @@
+- History depth: time-based retention options of 24 hours, 7 days, 1 month, or 3 months.
+- Search: yes; words and phrases from the original clip can be searched.
+- Image support: yes; text, images, and file links are documented.
+- Pinning: no documented pin/unpin feature.
+- Snippets: yes; separate snippets/text-expansion features are available, and history items can be promoted into them.
+- Sync: limited; preferences and snippets can sync, but clipboard history data is explicitly excluded.
+- Hotkey: yes; customizable, but no fixed default clipboard-history shortcut was documented.
+- Settings UI: yes; clipboard history is part of a broader preferences UI.
+- OCR: not documented.
+- Query syntax: free-text search only; no documented field grammar.

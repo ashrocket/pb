@@ -1,0 +1,6 @@
+- Hotkey ergonomics: customizable, but no default clipboard-history shortcut was documented.
+- Keyboard navigation: strong overall power-user posture, though clipboard-specific key flows were not deeply documented.
+- Visual polish: mature and configurable.
+- First-run experience: clipboard history is unavailable until the paid feature set is activated.
+- Settings discoverability: high; clipboard history and snippets live in a full preferences surface.
+- Dark mode: not documented in the reviewed materials.

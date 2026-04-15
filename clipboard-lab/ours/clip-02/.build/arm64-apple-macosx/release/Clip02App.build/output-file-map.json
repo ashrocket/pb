@@ -1,0 +1,49 @@
+{
+  "": {
+    "dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Clip02App.d",
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Clip02App.o",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/master.swiftdeps"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipConfiguration.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipConfiguration.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipConfiguration.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipConfiguration.dia"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/ClipboardPoller.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipboardPoller.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipboardPoller~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipboardPoller.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/ClipboardPoller.dia"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HistoryWindow.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HistoryWindow.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HistoryWindow~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HistoryWindow.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HistoryWindow.dia"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/HotkeyManager.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HotkeyManager.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HotkeyManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HotkeyManager.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/HotkeyManager.dia"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/MenuBar.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/MenuBar.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/MenuBar~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/MenuBar.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/MenuBar.dia"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/Store.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Store.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Store~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Store.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/Store.dia"
+  },
+  "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/Sources/clip-02/main.swift": {
+    "object": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/main.swift.o",
+    "swiftmodule": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/main.swiftdeps",
+    "diagnostics": "/Users/ashleyraiteri/ashcode/agent-pb/clipboard-lab/ours/clip-02/.build/arm64-apple-macosx/release/Clip02App.build/main.dia"
+  }
+}
