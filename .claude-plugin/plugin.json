@@ -1,13 +1,13 @@
 {
-  "name": "agent-pb",
-  "version": "0.1.0",
-  "description": "Copy the most recent useful artifact from your conversation to the clipboard. Works across AI coding agents.",
+  "name": "pb",
+  "version": "0.2.0",
+  "description": "Copy the right artifact from your conversation to the clipboard. /pb grabs the most recent useful thing; /pb <hint> lets the LLM pick the match.",
   "author": {
     "name": "Ashley Raiteri",
-    "email": "agent-pb@raiteri.net"
+    "email": "pb@raiteri.net"
   },
-  "homepage": "https://agent-pb.raiteri.net",
-  "repository": "https://github.com/ashrocket/agent-pb",
+  "homepage": "https://ashrocket.github.io/pb/",
+  "repository": "https://github.com/ashrocket/pb",
   "license": "MIT",
   "keywords": ["clipboard", "pbcopy", "paste-buffer", "productivity", "cross-agent"]
 }

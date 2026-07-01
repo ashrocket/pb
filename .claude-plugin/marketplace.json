@@ -1,12 +1,12 @@
 {
-  "name": "agent-pb",
+  "name": "pb",
   "description": "Clipboard butter knife for AI coding agents",
   "owner": { "name": "Ashley Raiteri" },
   "plugins": [
     {
-      "name": "agent-pb",
-      "description": "Clipboard butter knife. Copies the most recent useful artifact to your paste buffer.",
-      "version": "0.1.0",
+      "name": "pb",
+      "description": "Clipboard butter knife. Say /pb — copies the right artifact from the conversation to your paste buffer.",
+      "version": "0.2.0",
       "source": "./",
       "author": { "name": "Ashley Raiteri" }
     }
