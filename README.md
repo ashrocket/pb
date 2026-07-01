@@ -1,19 +1,30 @@
-# agent-pb
+# pb
 
-Clipboard helper for AI coding agents.
+Clipboard helper for AI coding agents. Say `/pb`.
 
-Ask the agent to copy the thing you just produced — a query, shell command, code block, URL, or config — and `agent-pb` puts the artifact itself on your clipboard.
+Ask the agent to copy the thing you just produced — a query, shell command,
+code block, URL, or config — and `pb` puts the artifact itself on your
+clipboard. No selecting. No highlighting. No dragging.
 
-No selecting. No highlighting. No dragging.
+```
+/pb                    # copies the most recent useful artifact
+/pb command            # copies the last shell command
+/pb the AQL query      # describe it — the model figures out what you mean
+/pb 2                  # 2nd most recent artifact
+copy that              # natural language works too
+```
 
 ## Install
 
 ### Claude Code (plugin)
 
 ```
-/plugin marketplace add ashrocket/agent-pb
-/plugin install agent-pb@agent-pb
+/plugin marketplace add ashrocket/pb
+/plugin install pb@pb
 ```
+
+You get `/pb` as a slash command plus natural-language triggers
+("copy that", "gimme that").
 
 ### Codex
 
@@ -21,50 +32,42 @@ Install the bundled skill into your Codex skills directory:
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills/pb"
-curl -sL https://raw.githubusercontent.com/ashrocket/agent-pb/main/skills/pb/SKILL.md \
+curl -sL https://raw.githubusercontent.com/ashrocket/pb/main/skills/pb/SKILL.md \
   -o "${CODEX_HOME:-$HOME/.codex}/skills/pb/SKILL.md"
 ```
 
-This repo already ships the Codex skill at [`skills/pb/SKILL.md`](skills/pb/SKILL.md).
-
-Useful Codex usage:
-
-```text
-$pb
-$pb command
-$pb the AQL query
-copy that
-copy the curl command
-```
-
-In Codex, `$pb` is the clearest explicit invocation. Natural-language requests also work when the surrounding prompt matches the skill description.
+In Codex, `$pb` is the explicit invocation; natural-language requests work
+when the prompt matches the skill description.
 
 ### Cursor / Windsurf / Copilot
 
-Copy the portable snippet into your rules file:
+Append the portable snippet to your rules file:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/ashrocket/agent-pb/main/snippets/pb-rules.md >> .cursorrules
+curl -sL https://raw.githubusercontent.com/ashrocket/pb/main/snippets/pb-rules.md >> .cursorrules
 ```
 
-Or manually paste the contents of [`snippets/pb-rules.md`](snippets/pb-rules.md) into your `.cursorrules`, `.windsurfrules`, or `.github/copilot-instructions.md`.
+Or paste [`snippets/pb-rules.md`](snippets/pb-rules.md) into
+`.windsurfrules` or `.github/copilot-instructions.md`.
 
-## Usage
+## How it picks
 
-```
-$pb                    # Codex: copies the most recent useful artifact
-$pb the curl command   # Codex: copies a specific artifact
-/pb                    # slash-style hosts: same behavior
-copy that              # natural-language fallback
-```
+With an argument, the model interprets it — artifact type, description, or
+ordinal. Without one, it takes the most recent useful artifact:
+query > shell command > code block > URL > config > plain text.
 
-On Codex, the installed skill is designed to trigger on `$pb` and natural-language requests like "copy that", "copy the query", or "grab that command". Treat `/pb` as a compatibility alias for hosts that use slash commands.
+Works on macOS (`pbcopy`), Linux (`xclip`/`wl-copy`), and WSL/Windows
+(`clip.exe`), with an OSC52 escape-sequence fallback for SSH sessions.
+Some hosts may ask approval before writing to the system clipboard.
 
-Works on macOS (`pbcopy`), Linux (`xclip`/`wl-copy`), and WSL/Windows (`clip.exe`). Auto-detects your platform. Some hosts may require approval before the agent can write to the system clipboard.
+## Site
+
+https://ashrocket.github.io/pb/
 
 ## Also
 
-- [agent-look](https://agent-look.raiteri.net) — screenshot scanner for Claude. Same philosophy: stop dragging things around.
+- [agent-look](https://agent-look.raiteri.net) — screenshot scanner for
+  Claude. Same philosophy: stop dragging things around.
 
 ## License
 
