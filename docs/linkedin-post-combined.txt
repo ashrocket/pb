@@ -6,13 +6,13 @@ So I built two tools:
 
 agent-look — say /look and the agent scans your recent screenshots, renames them from "Screenshot 2026-03-23 at 2.15.32 PM.png" to something useful, and pulls them into context. No dragging. It even uses macOS Spotlight OCR to avoid burning vision tokens.
 
-agent-pb — say /pb and the agent finds the most recent useful artifact in your conversation (query, command, code block, URL) and puts it in your clipboard. No selecting, no highlighting. Just paste.
+pb — say /pb and the agent finds the most recent useful artifact in your conversation (query, command, code block, URL) and puts it in your clipboard. No selecting, no highlighting. Just paste.
 
-Both are Claude Code plugins, but the prompts are portable. Drop them into Cursor, Windsurf, Copilot — anything that can run a shell command. agent-look is macOS only (Spotlight OCR dependency). agent-pb is cross-platform — macOS, Linux, and WSL.
+Both are Claude Code plugins, but the prompts are portable. Drop them into Cursor, Windsurf, Copilot — anything that can run a shell command. agent-look is macOS only (Spotlight OCR dependency). pb is cross-platform — macOS, Linux, and WSL.
 
 Same philosophy: laziness as a design principle. The agent is right there with shell access — let it handle the boring parts.
 
 agent-look: https://agent-look.raiteri.net
-agent-pb: https://agent-pb.raiteri.net
+pb: https://ashrocket.github.io/pb
 
 Both MIT licensed. If something's broken, file an issue. If it works perfectly, quiet gratitude is accepted.

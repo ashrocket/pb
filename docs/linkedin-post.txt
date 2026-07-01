@@ -2,7 +2,7 @@ Tired of selecting and copying text from your AI coding agent?
 
 Same. I got so tired of highlighting a curl command, copying it, switching to Terminal, and pasting. Or grabbing a SQL query. Or a code block. Every single time.
 
-So I built agent-pb — a clipboard butter knife.
+So I built pb — a clipboard butter knife.
 
 Say /pb. The agent finds the most recent useful artifact — query, command, code, URL, config — and puts it in your clipboard. No selecting. No highlighting. No dragging.
 
@@ -12,7 +12,7 @@ Cross-platform too: macOS pbcopy, Linux xclip, WSL clip.exe. Auto-detects.
 
 Sibling tool to agent-look (https://agent-look.raiteri.net — screenshot scanner) — same philosophy: stop dragging things around and let the agent handle the boring parts.
 
-agent-pb — MIT licensed:
-https://github.com/ashrocket/agent-pb
+pb — MIT licensed:
+https://github.com/ashrocket/pb
 
 (If you know any reasons I shouldn't have built this, I'd love to hear them.)

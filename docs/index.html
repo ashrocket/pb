@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>agent-pb — stop selecting, start pasting</title>
+  <title>pb — stop selecting, start pasting</title>
   <meta name="description" content="Clipboard helper for AI coding agents. Say /pb or 'copy that' and the agent puts the artifact on your clipboard. Works with Claude Code, Codex, Cursor, Windsurf, and Copilot.">
-  <meta property="og:title" content="agent-pb — stop selecting, start pasting">
+  <meta property="og:title" content="pb — stop selecting, start pasting">
   <meta property="og:description" content="Clipboard helper for AI coding agents. Say /pb or 'copy that' and the agent puts the artifact on your clipboard.">
-  <meta property="og:url" content="https://agent-pb.raiteri.net/">
+  <meta property="og:url" content="https://ashrocket.github.io/pb/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://agent-pb.raiteri.net/">
+  <link rel="canonical" href="https://ashrocket.github.io/pb/">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -375,12 +375,12 @@
 
   <header>
     <div class="butter-pat"></div>
-    <h1>agent-pb</h1>
+    <h1>pb</h1>
     <nav>
-      <a href="/blog.html">Blog</a>
-      <a href="https://github.com/ashrocket/agent-pb">GitHub</a>
+      <a href="blog.html">Blog</a>
+      <a href="https://github.com/ashrocket/pb">GitHub</a>
       <a href="https://agent-look.raiteri.net">agent-look</a>
-      <a href="https://github.com/ashrocket/agent-pb/issues">File an issue</a>
+      <a href="https://github.com/ashrocket/pb/issues">File an issue</a>
     </nav>
   </header>
 
@@ -390,7 +390,7 @@
     <h2>Stop selecting and copying text from your AI agent.</h2>
     <p>You wrote a query. A curl command. A code block. Now you need it in your clipboard. In Codex, say <strong>$pb</strong>. In other hosts, use <strong>/pb</strong> or plain language like <strong>copy that</strong>.</p>
     <div class="hero-buttons">
-      <a href="https://github.com/ashrocket/agent-pb" class="btn btn-primary">Get it on GitHub</a>
+      <a href="https://github.com/ashrocket/pb" class="btn btn-primary">Get it on GitHub</a>
       <a href="#install" class="btn btn-secondary">Install in 1 minute</a>
     </div>
   </div>
@@ -432,7 +432,7 @@
   <div class="cross-agent">
     <p class="eyebrow">Works everywhere</p>
     <h2>One clipboard workflow. Multiple agent hosts.</h2>
-    <p>agent-pb works best as a Codex skill, but the same artifact-selection behavior is portable to Claude Code and other rule-based coding tools.</p>
+    <p>pb works best as a Codex skill, but the same artifact-selection behavior is portable to Claude Code and other rule-based coding tools.</p>
     <div class="agent-grid">
       <div class="agent-card">
         <h4>Claude Code</h4>
@@ -515,15 +515,15 @@
     <h2>Claude Code (plugin)</h2>
     <div class="code-block">
       <span class="comment"># add the marketplace and install</span><br>
-      <span class="cmd">/plugin marketplace add ashrocket/agent-pb</span><br>
-      <span class="cmd">/plugin install agent-pb@agent-pb</span>
+      <span class="cmd">/plugin marketplace add ashrocket/pb</span><br>
+      <span class="cmd">/plugin install pb@pb</span>
     </div>
 
     <h2 class="platform-heading">Codex</h2>
     <div class="code-block">
       <span class="comment"># install the bundled skill</span><br>
       <span class="cmd">mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills/pb"</span><br>
-      <span class="cmd">curl -sL https://raw.githubusercontent.com/ashrocket/agent-pb/main/skills/pb/SKILL.md \</span><br>
+      <span class="cmd">curl -sL https://raw.githubusercontent.com/ashrocket/pb/main/skills/pb/SKILL.md \</span><br>
       <span class="cmd">&nbsp;&nbsp;-o "${CODEX_HOME:-$HOME/.codex}/skills/pb/SKILL.md"</span>
     </div>
     <div class="code-block">
@@ -536,11 +536,11 @@
     <h2 class="platform-heading">Cursor / Windsurf / Copilot</h2>
     <div class="code-block">
       <span class="comment"># copy the portable snippet to your rules file</span><br>
-      <span class="cmd">curl -sL https://raw.githubusercontent.com/ashrocket/agent-pb/main/snippets/pb-rules.md >> .cursorrules</span>
+      <span class="cmd">curl -sL https://raw.githubusercontent.com/ashrocket/pb/main/snippets/pb-rules.md >> .cursorrules</span>
     </div>
 
     <p class="note">
-      Some hosts may ask for approval before writing to the system clipboard. Something broken? <a href="https://github.com/ashrocket/agent-pb/issues">File an issue.</a>
+      Some hosts may ask for approval before writing to the system clipboard. Something broken? <a href="https://github.com/ashrocket/pb/issues">File an issue.</a>
       Want to improve it? PRs welcome.
     </p>
   </div>

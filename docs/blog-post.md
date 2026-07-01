@@ -1,6 +1,6 @@
 # I built a butter knife for your AI agent's clipboard
 
-There are probably a million reasons why I shouldn't have built this. If you know any, leave a comment at [the repo](https://github.com/ashrocket/agent-pb).
+There are probably a million reasons why I shouldn't have built this. If you know any, leave a comment at [the repo](https://github.com/ashrocket/pb).
 
 ---
 
@@ -8,7 +8,7 @@ Here's my workflow, dozens of times a day: I ask Claude to write a query, or a c
 
 It's not hard. It's just *constant*. And every time I do it I think: you're an AI agent with access to my shell. Why am I the one doing this?
 
-So I built **agent-pb**. In Codex you say `$pb`. In slash-command hosts you say `/pb`. Or you just say "copy that." The agent finds the most recent useful thing in your conversation — a query, a shell command, a code block, a URL — and puts the artifact itself right into your clipboard. No selecting. No highlighting. You just paste.
+So I built **pb**. In Codex you say `$pb`. In slash-command hosts you say `/pb`. Or you just say "copy that." The agent finds the most recent useful thing in your conversation — a query, a shell command, a code block, a URL — and puts the artifact itself right into your clipboard. No selecting. No highlighting. You just paste.
 
 ---
 
@@ -30,6 +30,6 @@ Same philosophy: stop moving things around manually. Let the agent handle the bo
 
 ---
 
-**Get it:** [github.com/ashrocket/agent-pb](https://github.com/ashrocket/agent-pb)
+**Get it:** [github.com/ashrocket/pb](https://github.com/ashrocket/pb)
 
 If something's broken, file an issue. If it works perfectly, I will accept quiet gratitude.

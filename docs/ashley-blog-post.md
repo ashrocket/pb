@@ -28,17 +28,17 @@ The fun technical detail: the first version dispatched a vision subagent for eve
 
 ---
 
-## agent-pb: stop selecting and copying
+## pb: stop selecting and copying
 
 The second one solves the clipboard problem.
 
 Dozens of times a day: Claude writes a query, or a curl command, or a code block. Then I have to select the text — carefully, because the markdown fences aren't part of it — copy it, switch to my terminal, and paste.
 
-**agent-pb** is a clipboard butter knife. Say `/pb` and the agent finds the most recent useful artifact in your conversation — a query, shell command, code block, URL, config — and spreads it right into your clipboard. No selecting. No highlighting. You just paste.
+**pb** is a clipboard butter knife. Say `/pb` and the agent finds the most recent useful artifact in your conversation — a query, shell command, code block, URL, config — and spreads it right into your clipboard. No selecting. No highlighting. You just paste.
 
 The name works on two levels: `pb` is the macOS clipboard command (`pbcopy`/`pbpaste`), but it's also how the tool feels. You're not carefully cutting and placing — you're just spreading it where it needs to go, like butter on toast.
 
-[agent-pb.raiteri.net](https://agent-pb.raiteri.net) | [GitHub](https://github.com/ashrocket/agent-pb)
+[ashrocket.github.io/pb](https://ashrocket.github.io/pb) | [GitHub](https://github.com/ashrocket/pb)
 
 ---
 
@@ -52,4 +52,4 @@ I'm calling them the **agent-\*** family. The philosophy is simple: stop moving 
 
 ---
 
-Both are MIT licensed. If something's broken, [file an issue](https://github.com/ashrocket/agent-pb/issues). If it works perfectly, I will accept quiet gratitude.
+Both are MIT licensed. If something's broken, [file an issue](https://github.com/ashrocket/pb/issues). If it works perfectly, I will accept quiet gratitude.
