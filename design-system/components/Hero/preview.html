@@ -1,0 +1,105 @@
+<!-- @dsCard group="Landing" height=520 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pb hero</title>
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--page-bg);
+    color: var(--body-text);
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  /* header bar (docs/index.html:25-52) */
+  header {
+    background: var(--header-bg);
+    border-bottom: 6px solid var(--header-rule);
+    padding: var(--header-pad-y) var(--page-pad-x);
+    display: flex;
+    align-items: center;
+    gap: var(--header-gap);
+    flex-wrap: wrap;
+  }
+  .butter-pat {
+    width: 22px; height: 16px;
+    background: var(--butter);
+    border-radius: var(--radius-mark);
+    transform: rotate(-4deg);
+    box-shadow: var(--shadow-mark);
+    flex: none;
+  }
+  header h1 { color: var(--wordmark); }
+  header nav { margin-left: auto; display: flex; gap: var(--nav-gap); flex-wrap: wrap; }
+  header nav a { color: var(--nav-link); text-decoration: none; font-size: 0.9rem; }
+
+  /* hero (docs/index.html:56-98) */
+  .hero {
+    background: linear-gradient(135deg, var(--hero-start) 0%, var(--hero-end) 100%);
+    padding: var(--hero-pad-top) var(--page-pad-x) var(--hero-pad-bottom);
+  }
+  .hero h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: var(--measure-headline);
+    margin-bottom: var(--hero-headline-gap);
+    color: var(--hero-text);
+  }
+  .hero p {
+    font-size: 1.25rem;
+    color: var(--hero-text);
+    max-width: var(--measure-lede);
+    line-height: 1.6;
+    margin-bottom: var(--hero-lede-gap);
+  }
+  .hero-buttons { display: flex; gap: var(--buttons-gap); flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: var(--btn-pad-y) var(--btn-pad-x);
+    border-radius: var(--radius-btn);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btn-primary { background: var(--btn-primary-bg); color: var(--btn-primary-text); }
+  .btn-secondary {
+    background: var(--btn-secondary-bg);
+    color: var(--hero-text);
+    border: 1px solid var(--btn-secondary-border);
+  }
+  .hero p strong { font-weight: 700; }
+
+  @media (max-width: 700px) {
+    .hero h2 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="butter-pat"></div>
+  <h1 class="wordmark">pb</h1>
+  <nav>
+    <a href="#">Blog</a>
+    <a href="#">GitHub</a>
+    <a href="#">agent-look</a>
+    <a href="#">File an issue</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2 class="hero-headline">Stop selecting and copying text from your AI agent.</h2>
+  <p class="hero-lede">You wrote a query. A curl command. A code block. Now you need it in your clipboard. In Codex, say <strong>$pb</strong>. In other hosts, use <strong>/pb</strong> or plain language like <strong>copy that</strong>.</p>
+  <div class="hero-buttons">
+    <a href="#" class="btn btn-primary">Get it on GitHub</a>
+    <a href="#" class="btn btn-secondary">Install in 1 minute</a>
+  </div>
+</section>
+</body>
+</html>

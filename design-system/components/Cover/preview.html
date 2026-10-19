@@ -1,0 +1,61 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>pb cover</title>
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; }
+  body { background: var(--page-bg); color: var(--body-text); font-family: var(--font-sans); }
+  /* Fluid card: width follows the frame (max 960px), height follows the 960:288 ratio.
+     Positions and sizes are percentages of the card width (container query units). */
+  .cover {
+    position: relative; width: 100%; max-width: 960px; aspect-ratio: 960 / 288;
+    margin: 0 auto; container-type: inline-size;
+  }
+  .cover svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+  .name {
+    position: absolute; left: 5%; bottom: 25.7%;
+    font-size: 10.83cqi; font-weight: 800; line-height: 1; letter-spacing: -0.5px;
+    color: var(--wordmark);
+  }
+  .tagline {
+    position: absolute; left: 5.42%; bottom: 15.3%;
+    font-size: clamp(11px, 1.46cqi, 14px); line-height: 20px; color: var(--body-text);
+  }
+  .f-hero { fill: var(--hero-start); }
+  .f-butter { fill: var(--butter); }
+  .f-header { fill: var(--header-bg); }
+  .f-code { fill: var(--code-bg); }
+  .f-page { fill: var(--page-bg); }
+</style>
+</head>
+<body>
+<div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+  <!--
+    Derivation: 3 solid blocks (hero-start, butter, header-bg) use 3 landing tokens.
+    Arrangement: a tall block at x=480 and two stacked blocks to its right, 50% of the cover.
+    Pattern: the butter pat motif (the landing mark, docs/index.html:33-38), 3 rotated rounded rects, because the landing brand is a plain-type mark with one butter pat.
+    Steps and radii: radius-mark (3px) on the pats, no shadows.
+  -->
+  <rect class="f-hero" x="480" y="0" width="240" height="288"/>
+  <rect class="f-butter" x="720" y="0" width="240" height="144"/>
+  <rect class="f-header" x="720" y="144" width="240" height="144"/>
+  <g transform="rotate(-4 840 72)">
+    <rect class="f-butter" x="806" y="64" width="66" height="48" rx="3"/>
+  </g>
+  <g transform="rotate(-4 600 144)">
+    <rect class="f-header" x="566" y="136" width="66" height="48" rx="3"/>
+  </g>
+  <g transform="rotate(-4 840 216)">
+    <rect class="f-code" x="806" y="208" width="66" height="48" rx="3"/>
+  </g>
+</svg>
+<div class="name">pb</div>
+<div class="tagline">stop selecting, start pasting</div>
+</div>
+</body>
+</html>

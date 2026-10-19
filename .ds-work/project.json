@@ -1,0 +1,8 @@
+{
+ "n": "pb",
+ "target": "design-system",
+ "mode": "v2",
+ "brief": "Canonical surface: the landing docs/index.html:19 butter-and-crust palette (page #8B6914, header #6B4F10, butter #FFD966, hero start #E8A317, body text #FFF3D4, system-ui, SF Mono code). v2 decision: the clipboard-lab review (docs/clipboard-lab-review.html:10) and seashells tour palettes are page-specific; list them in Drift; new pages use the landing tokens. Wordmark: plain text \"pb\" as on the landing. Hero = the landing first screen.",
+ "ruling": "",
+ "defects": []
+}
